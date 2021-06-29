@@ -1,4 +1,4 @@
-# *Championships data base* 
+# *foot-meteo: Championships data base with meteo data* 
 
 ## *What is does*
 In this study project we create data base sqlite local with the data taken from the site [l'Équipe](https://www.lequipe.fr/)
@@ -12,17 +12,11 @@ Code is written in python.
 
 All dependencies you need to run this project are listed in environment.yml
 
-PROGRAM is a python/c++/c/html/ipython notebook which makes/solve/consists
-what is a goal
-input
-output 
 
 ## General Prerequisites (for running and building)
 
 * [Anaconda](https://www.anaconda.com/products/individual)
 * [GitHub](https://github.com)
-* library-n.version 5
-* some other library
 
 After installing anaconda and python you have to set your environment with environment.yml file
 
@@ -45,7 +39,7 @@ The data taken from the site [l'Équipe](https://www.lequipe.fr/)
 
 If you have any questions please reach one of the authors of the project:
 
-* [Hugo Fugeray](https://github.com/hugofgry)
-* [Smirnova Nina](https://github.com/rolandina)
+* [Hugo FUGERAY](https://github.com/hugofgry)
+* [Nina SMIRNOVA](https://github.com/rolandina)
 * [Nouha EL ABED](https://github.com/NOUHA90)
 * [Michael KRYSZTOFIAK](https://github.com/art2mkl )
