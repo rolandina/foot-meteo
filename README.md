@@ -1,6 +1,16 @@
-# *NAME OF THE PROJECT/PROGRAM* 
+# *Championships data base* 
 
 ## *What is does*
+In this study project we create data base sqlite local with the data taken from the site [l'Équipe](https://www.lequipe.fr/)
+
+You can look at the data base structure in the file championship.sql
+or in the .png
+
+The architecture of the data base was made in [DBdesigner](https://app.dbdesigner.net) and after was imported into our code.
+
+Code is written in python.
+
+All dependencies you need to run this project are listed in environment.yml
 
 PROGRAM is a python/c++/c/html/ipython notebook which makes/solve/consists
 what is a goal
@@ -14,22 +24,28 @@ output
 * library-n.version 5
 * some other library
 
-## To build
+After installing anaconda and python you have to set your environment with environment.yml file
 
-NAME PROGRAM can be build on win/mac/linux
-Instruction how to build
+```bash
+conda env create -f environment.yml
+conda activate house_predict
+```
 
-## To run (for development or testing)
+## To build and run 
 
 ```
 # Clone this repository 
-git clone http://github.com/rolandina
-# Go into the directory
-cd dirname
-# python run.py
+git clone https://github.com/rolandina/house-price-prediction.git
 ```
+
 ## Contributing
 
-This project was built on another project/[framework](framework link)
-If you have any questions, please reach me at 
-[License](www.lisense.com)
+The architecture of the data base was made in [DBdesigner](https://app.dbdesigner.net) 
+The data taken from the site [l'Équipe](https://www.lequipe.fr/)
+
+If you have any questions please reach one of the authors of the project:
+
+* [Hugo Fugeray](https://github.com/hugofgry)
+* [Smirnova Nina](https://github.com/rolandina)
+* [Nouha EL ABED](https://github.com/NOUHA90)
+* [Michael KRYSZTOFIAK](https://github.com/art2mkl )
