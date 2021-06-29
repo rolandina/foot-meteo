@@ -1,0 +1,381 @@
+Exterior_team,score_exterior,scorer_names_ext,Domicile_team,score_dom,scorer_names_dom,lieu_match,date,journee,region,clean_date,temp_max,temp_min,precipitations
+Nantes,0,[],Bordeaux,0,[],Bordeaux,2020/08/21,1,aquitaine,2020-08-21 19:00:00+02:00,24°,21°,5mm
+Angers,1,['I. Traoré'],Dijon,0,[],Dijon,2020/08/22,1,bourgogne,2020-08-22 17:00:00+02:00,26°,18°,19mm
+Rennes,1,['D. Da'],Lille,1,['J. Bamba'],Lille,2020/08/22,1,nord-pas-de-calais,2020-08-22 21:00:00+02:00,21°,17°,1mm
+Reims,2,"['B. Dia', 'E. Touré']",Monaco,2,"['A. Disasi', 'B. Badiashile']",Monaco,2020/08/23,1,provence-alpes-c-te-d-azur,2020-08-23 13:00:00+02:00,27°,24°,1mm
+Strasbourg,1,['M. Chahiri'],Lorient,3,"['Y. Wissa', 'A. Grbic', 'P. Hamel']",Lorient,2020/08/23,1,bretagne,2020-08-23 15:00:00+02:00,19°,15°,1mm
+Brest,0,[],Nîmes,4,"['K. Denkey', 'B. Meling', 'R. Philippoteaux', 'M. Koné']",Nîmes,2020/08/23,1,languedoc-roussillon,2020-08-23 15:00:00+02:00,31°,22°,0mm
+Lens,1,['G. Kakuta'],Nice,2,"['A. Gouiri', 'A. Gouiri']",Nice,2020/08/23,1,provence-alpes-c-te-d-azur,2020-08-23 17:00:00+02:00,27°,24°,1mm
+Lyon,1,['M. Depay'],Montpellier,2,"['T. Savanier', 'T. Savanier']",Montpellier,2020/09/15,1,languedoc-roussillon,2020-09-15 21:00:00+02:00,26°,21°,0mm
+Metz,0,[],Paris-SG,1,['J. Draxler'],Paris,2020/09/16,1,ile-de-france,2020-09-16 21:00:00+02:00,32°,22°,1mm
+Saint-Étienne,2,"['R. Hamouma', 'D. Bouanga']",Marseille,0,[],Marseille,2020/09/17,1,provence-alpes-c-te-d-azur,2020-09-17 21:00:00+02:00,27°,26°,0mm
+Dijon,1,['A. Scheidler'],Lyon,4,"['M. Depay', 'W. Lautoa', 'M. Depay', 'M. Depay']",Lyon,2020/08/28,2,rh-ne-alpes,2020-08-28 21:00:00+02:00,23°,20°,20mm
+Montpellier,1,['+1 G.'],Rennes,2,"['D. Le', 'E. Camavinga']",Rennes,2020/08/29,2,bretagne,2020-08-29 17:00:00+02:00,16°,12°,4mm
+Nice,2,"['K. Dolberg', 'K. Dolberg']",Strasbourg,0,[],Strasbourg,2020/08/29,2,alsace,2020-08-29 21:00:00+02:00,19°,14°,1mm
+Lille,1,['J. Bamba'],Reims,0,[],Reims,2020/08/30,2,champagne-ardenne,2020-08-30 13:00:00+02:00,20°,10°,2mm
+Nîmes,1,['Z. Ferhat'],Nantes,2,"['A. Girotto', 'I. Louza']",Nantes,2020/08/30,2,pays-de-la-loire,2020-08-30 15:00:00+02:00,19°,9°,1mm
+Lorient,0,[],Saint-Étienne,2,"['R. Hamouma', 'R. Hamouma']",Saint-Étienne,2020/08/30,2,rh-ne-alpes,2020-08-30 15:00:00+02:00,18°,11°,2mm
+Bordeaux,2,"['J. Maja', 'T. Basic']",Angers,0,[],Angers,2020/08/30,2,pays-de-la-loire,2020-08-30 15:00:00+02:00,18°,9°,1mm
+Monaco,1,['B. Badiashile'],Metz,0,[],Metz,2020/08/30,2,lorraine,2020-08-30 15:00:00+02:00,20°,14°,1mm
+Marseille,3,"['F. Thauvin', 'D. Caleta-Car', 'D. Caleta-Car']",Brest,2,"['R. Faivre', 'G. Charbonnier']",Brest,2020/08/30,2,bretagne,2020-08-30 21:00:00+02:00,17°,12°,1mm
+Paris-SG,0,[],Lens,1,['I. Ganago'],Lens,2020/09/10,2,nord-pas-de-calais,2020-09-10 21:00:00+02:00,22°,16°,1mm
+Lyon,0,[],Bordeaux,0,[],Bordeaux,2020/09/11,3,aquitaine,2020-09-11 21:00:00+02:00,30°,17°,0mm
+Nice,1,['Dante'],Montpellier,3,"['G. Laborde', 'D. Congré', 'D. Congré']",Montpellier,2020/09/12,3,languedoc-roussillon,2020-09-12 17:00:00+02:00,28°,22°,3mm
+Strasbourg,0,[],Saint-Étienne,2,"['D. Bouanga', 'M. Camara']",Saint-Étienne,2020/09/12,3,rh-ne-alpes,2020-09-12 21:00:00+02:00,27°,12°,0mm
+Metz,0,[],Lille,1,['L. Araujo'],Lille,2020/09/13,3,nord-pas-de-calais,2020-09-13 13:00:00+02:00,26°,14°,0mm
+Rennes,4,"['S. Guirassy', 'S. Guirassy', 'N. Aguerd', '+7 B.']",Nîmes,2,"['A. Cubas', 'Z. Ferhat']",Nîmes,2020/09/13,3,languedoc-roussillon,2020-09-13 15:00:00+02:00,32°,22°,0mm
+Lens,3,"['G. Kakuta', 'F. Medina', 'I. Ganago']",Lorient,2,"['A. Grbic', 'Y. Wissa']",Lorient,2020/09/13,3,bretagne,2020-09-13 15:00:00+02:00,24°,12°,0mm
+Reims,0,[],Angers,1,['S. Bahoken'],Angers,2020/09/13,3,pays-de-la-loire,2020-09-13 15:00:00+02:00,30°,12°,0mm
+Brest,2,"['R. Perraud', '+5 I.']",Dijon,0,[],Dijon,2020/09/13,3,bourgogne,2020-09-13 15:00:00+02:00,30°,14°,0mm
+Nantes,1,['L. Blas'],Monaco,2,"['S. Diop', 'W. Geubbels']",Monaco,2020/09/13,3,provence-alpes-c-te-d-azur,2020-09-13 17:00:00+02:00,28°,25°,0mm
+Marseille,1,['F. Thauvin'],Paris-SG,0,[],Paris,2020/09/13,3,ile-de-france,2020-09-13 21:00:00+02:00,32°,20°,0mm
+Nîmes,0,[],Lyon,0,[],Lyon,2020/09/18,4,rh-ne-alpes,2020-09-18 21:00:00+02:00,31°,20°,0mm
+Bordeaux,1,['+5 S.'],Lens,2,"['I. Ganago', 'G. Kakuta']",Lens,2020/09/19,4,nord-pas-de-calais,2020-09-19 17:00:00+02:00,24°,16°,1mm
+Monaco,1,['W. Ben'],Rennes,2,"['S. Nzonzi', 'A. Truffert']",Rennes,2020/09/19,4,bretagne,2020-09-19 21:00:00+02:00,23°,17°,19mm
+Paris-SG,3,"['K. Mbappé', '+1 A.', 'Marquinhos']",Nice,0,[],Nice,2020/09/20,4,provence-alpes-c-te-d-azur,2020-09-20 13:00:00+02:00,24°,22°,16mm
+Angers,1,['S. Bahoken'],Montpellier,4,"['A. Souquet', 'A. Delort', 'A. Delort', 'F. Mollet']",Montpellier,2020/09/20,4,languedoc-roussillon,2020-09-20 15:00:00+02:00,26°,20°,16mm
+Lorient,2,"['C. Hérelle', '+2 T.']",Brest,3,"['R. Perraud', 'S. Mounié', 'F. Honorat']",Brest,2020/09/20,4,bretagne,2020-09-20 15:00:00+02:00,20°,14°,0mm
+Reims,1,['B. Dia'],Metz,2,"['I. Niane', 'I. Niane']",Metz,2020/09/20,4,lorraine,2020-09-20 15:00:00+02:00,24°,14°,1mm
+Dijon,0,[],Strasbourg,1,['S. Mitrovic'],Strasbourg,2020/09/20,4,alsace,2020-09-20 15:00:00+02:00,24°,15°,0mm
+Saint-Étienne,2,"['A. Aouchiche', 'Y. Maçon']",Nantes,2,"['M. Simon', 'R. Emond']",Nantes,2020/09/20,4,pays-de-la-loire,2020-09-20 17:00:00+02:00,25°,16°,2mm
+Lille,1,['L. Araujo'],Marseille,1,['V. Germain'],Marseille,2020/09/20,4,provence-alpes-c-te-d-azur,2020-09-20 21:00:00+02:00,25°,23°,13mm
+Nantes,0,[],Lille,2,"['N. Pallois', 'B. Yilmaz']",Lille,2020/09/25,5,nord-pas-de-calais,2020-09-25 21:00:00+02:00,12°,9°,8mm
+Rennes,3,"['N. Aguerd', 'S. Guirassy', 'A. Hunou']",Saint-Étienne,0,[],Saint-Étienne,2020/09/26,5,rh-ne-alpes,2020-09-26 17:00:00+02:00,11°,4°,3mm
+Metz,1,['I. Niane'],Marseille,1,['M. Sanson'],Marseille,2020/09/26,5,provence-alpes-c-te-d-azur,2020-09-26 21:00:00+02:00,16°,13°,0mm
+Nice,0,[],Bordeaux,0,[],Bordeaux,2020/09/27,5,aquitaine,2020-09-27 13:00:00+02:00,15°,8°,1mm
+Montpellier,2,"['A. Delort', 'T. Savanier']",Dijon,2,"['E. Dina', 'B. Ecuele']",Dijon,2020/09/27,5,bourgogne,2020-09-27 15:00:00+02:00,9°,7°,47mm
+Lens,1,['I. Ganago'],Nîmes,1,['Z. Ferhat'],Nîmes,2020/09/27,5,languedoc-roussillon,2020-09-27 15:00:00+02:00,15°,9°,1mm
+Strasbourg,2,"['M. Chahiri', 'L. Ajorque']",Monaco,3,"['W. Ben', 'R. Aguilar', 'W. Ben']",Monaco,2020/09/27,5,provence-alpes-c-te-d-azur,2020-09-27 15:00:00+02:00,19°,16°,1mm
+Brest,2,"['S. Mounié', 'G. Charbonnier']",Angers,3,"['S. Thioub', 'I. Traoré', 'A. Fulgini']",Angers,2020/09/27,5,pays-de-la-loire,2020-09-27 15:00:00+02:00,14°,9°,0mm
+Lyon,1,['L. Dubois'],Lorient,1,['Y. Wissa'],Lorient,2020/09/27,5,bretagne,2020-09-27 17:00:00+02:00,17°,8°,0mm
+Paris-SG,2,"['M. Icardi', 'M. Icardi']",Reims,0,[],Reims,2020/09/27,5,champagne-ardenne,2020-09-27 21:00:00+02:00,15°,11°,21mm
+Angers,1,['I. Traoré'],Paris-SG,6,"['A. Florenzi', 'Neymar 36’', 'Neymar 47’', 'J. Draxler', 'I. Gueye', 'K. Mbappé']",Paris,2020/10/02,6,ile-de-france,2020-10-02 21:00:00+02:00,15°,12°,31mm
+Saint-Étienne,0,[],Lens,2,"['G. Kakuta', 'F. Sotoca']",Lens,2020/10/03,6,nord-pas-de-calais,2020-10-03 17:00:00+02:00,15°,12°,22mm
+Nantes,1,['+6 I.'],Nice,2,"['Dante 27’', 'K. Thuram']",Nice,2020/10/03,6,provence-alpes-c-te-d-azur,2020-10-03 21:00:00+02:00,17°,14°,22mm
+Nîmes,1,['R. Ripart'],Montpellier,0,[],Montpellier,2020/10/04,6,languedoc-roussillon,2020-10-04 13:00:00+02:00,17°,15°,2mm
+Lille,3,"['M. Çelik', 'R. Sanches', 'B. Yilmaz']",Strasbourg,0,[],Strasbourg,2020/10/04,6,alsace,2020-10-04 15:00:00+02:00,17°,10°,2mm
+Monaco,0,[],Brest,1,['R. Faivre'],Brest,2020/10/04,6,bretagne,2020-10-04 15:00:00+02:00,13°,11°,7mm
+Dijon,0,[],Bordeaux,3,"['R. Oudin', 'S. Kalu', 'T. Basic']",Bordeaux,2020/10/04,6,aquitaine,2020-10-04 15:00:00+02:00,15°,12°,13mm
+Lorient,1,['P. Hamel'],Metz,3,"['I. Niane', 'I. Niane', 'I. Niane']",Metz,2020/10/04,6,lorraine,2020-10-04 15:00:00+02:00,13°,9°,18mm
+Reims,2,"['Y. Abdelhamid', 'B. Dia']",Rennes,2,"['Raphinha 24’', 'D. Da']",Rennes,2020/10/04,6,bretagne,2020-10-04 17:00:00+02:00,15°,8°,4mm
+Marseille,1,['D. Payet'],Lyon,1,['H. Aouar'],Lyon,2020/10/04,6,rh-ne-alpes,2020-10-04 21:00:00+02:00,15°,10°,5mm
+Rennes,1,['M. Terrier'],Dijon,1,['M. Baldé'],Dijon,2020/10/16,7,bourgogne,2020-10-16 19:00:00+02:00,12°,8°,2mm
+Paris-SG,4,"['K. Mbappé', 'A. Florenzi', 'K. Mbappé', 'P. Sarabia']",Nîmes,0,[],Nîmes,2020/10/16,7,languedoc-roussillon,2020-10-16 21:00:00+02:00,16°,9°,0mm
+Lorient,3,"['P. Hamel', 'Y. Wissa', 'T. Moffi']",Reims,1,['M. Cassama'],Reims,2020/10/17,7,champagne-ardenne,2020-10-17 17:00:00+02:00,11°,7°,0mm
+Bordeaux,1,['J. Maja'],Marseille,3,"['F. Thauvin', 'J. Amavi', 'Pablo 64’']",Marseille,2020/10/17,7,provence-alpes-c-te-d-azur,2020-10-17 21:00:00+02:00,17°,13°,0mm
+Lyon,3,"['T. Kadewere', 'K. Toko', 'K. Toko']",Strasbourg,2,"['H. Diallo', 'J. Aholou']",Strasbourg,2020/10/18,7,alsace,2020-10-18 13:00:00+02:00,13°,7°,2mm
+Montpellier,1,['S. Mavididi'],Monaco,1,['W. Ben'],Monaco,2020/10/18,7,provence-alpes-c-te-d-azur,2020-10-18 15:00:00+02:00,17°,15°,1mm
+Brest,1,['R. Faivre'],Nantes,3,"['R. Kolo', 'L. Blas', 'A. Bamba']",Nantes,2020/10/18,7,pays-de-la-loire,2020-10-18 15:00:00+02:00,16°,7°,0mm
+Metz,1,['O. Nguette'],Angers,1,['T. Mangani'],Angers,2020/10/18,7,pays-de-la-loire,2020-10-18 15:00:00+02:00,15°,9°,0mm
+Nice,3,"['P. Lees-Melou', 'A. Gouiri', '+1 M.']",Saint-Étienne,1,['A. Aouchiche'],Saint-Étienne,2020/10/18,7,rh-ne-alpes,2020-10-18 17:00:00+02:00,12°,1°,0mm
+Lens,0,[],Lille,4,"['B. Yilmaz', 'J. Bamba', 'J. Ikoné', 'Y. Yazici']",Lille,2020/10/18,7,nord-pas-de-calais,2020-10-18 21:00:00+02:00,13°,10°,2mm
+Angers,2,"['S. Boufal', 'A. Fulgini']",Rennes,1,['A. Hunou'],Rennes,2020/10/23,8,bretagne,2020-10-23 21:00:00+02:00,17°,9°,2mm
+Marseille,1,['L. Balerdi'],Lorient,0,[],Lorient,2020/10/24,8,bretagne,2020-10-24 17:00:00+02:00,16°,15°,18mm
+Dijon,0,[],Paris-SG,4,"['M. Kean', 'M. Kean', 'K. Mbappé', 'K. Mbappé']",Paris,2020/10/24,8,ile-de-france,2020-10-24 21:00:00+02:00,16°,13°,1mm
+Reims,4,"['B. Dia', 'B. Dia', 'N. Mbuku', 'B. Dia']",Montpellier,0,[],Montpellier,2020/10/25,8,languedoc-roussillon,2020-10-25 15:00:00+01:00,18°,13°,0mm
+Saint-Étienne,0,[],Metz,2,"['F. Boulaya', 'N. Sissoko']",Metz,2020/10/25,8,lorraine,2020-10-25 15:00:00+01:00,12°,11°,11mm
+Nîmes,0,[],Bordeaux,2,"['J. Briand', 'R. Oudin']",Bordeaux,2020/10/25,8,aquitaine,2020-10-25 15:00:00+01:00,16°,13°,7mm
+Strasbourg,3,"['H. Diallo', 'K. Lala', 'L. Ajorque']",Brest,0,[],Brest,2020/10/25,8,bretagne,2020-10-25 15:00:00+01:00,12°,10°,4mm
+Lille,1,['B. Yilmaz'],Nice,1,['K. Dolberg'],Nice,2020/10/25,8,provence-alpes-c-te-d-azur,2020-10-25 17:00:00+01:00,18°,15°,2mm
+Monaco,1,['W. Ben'],Lyon,4,"['M. Depay', 'K. Toko', 'H. Aouar', 'K. Toko']",Lyon,2020/10/25,8,rh-ne-alpes,2020-10-25 21:00:00+01:00,18°,11°,0mm
+Nantes,1,['A. Touré'],Lens,1,['G. Kakuta'],Lens,2020/11/25,8,nord-pas-de-calais,2020-11-25 19:00:00+01:00,10°,6°,0mm
+Brest,1,['F. Honorat'],Rennes,2,"['D. Da', 'N. Aguerd']",Rennes,2020/10/31,9,bretagne,2020-10-31 17:00:00+01:00,15°,10°,2mm
+Paris-SG,3,"['A. Herrera', 'K. Mbappé', 'P. Sarabia']",Nantes,0,[],Nantes,2020/10/31,9,pays-de-la-loire,2020-10-31 21:00:00+01:00,17°,11°,0mm
+Montpellier,1,['S. Mavididi'],Saint-Étienne,0,[],Saint-Étienne,2020/11/01,9,rh-ne-alpes,2020-11-01 13:00:00+01:00,20°,11°,0mm
+Nice,3,"['R. Lopes', 'P. Lees-Melou', 'H. Boudaoui']",Angers,0,[],Angers,2020/11/01,9,pays-de-la-loire,2020-11-01 15:00:00+01:00,18°,17°,5mm
+Metz,1,['M. Gueye'],Nîmes,0,[],Nîmes,2020/11/01,9,languedoc-roussillon,2020-11-01 15:00:00+01:00,21°,12°,0mm
+Lorient,0,[],Dijon,0,[],Dijon,2020/11/01,9,bourgogne,2020-11-01 15:00:00+01:00,15°,12°,5mm
+Strasbourg,1,['L. Ajorque'],Reims,2,"['B. Kamara', 'W. Faes']",Reims,2020/11/01,9,champagne-ardenne,2020-11-01 15:00:00+01:00,15°,14°,2mm
+Bordeaux,0,[],Monaco,4,"['W. Ben', 'G. Martins', 'K. Volland', 'K. Volland']",Monaco,2020/11/01,9,provence-alpes-c-te-d-azur,2020-11-01 17:00:00+01:00,18°,17°,0mm
+Lyon,1,['M. Çelik'],Lille,1,['J. Bamba'],Lille,2020/11/01,9,nord-pas-de-calais,2020-11-01 21:00:00+01:00,17°,12°,1mm
+Lens,1,['S. Banza'],Marseille,0,[],Marseille,2021/01/20,9,provence-alpes-c-te-d-azur,2021-01-20 21:00:00+01:00,13°,12°,6mm
+Marseille,1,['M. Sanson'],Strasbourg,0,[],Strasbourg,2020/11/06,10,alsace,2020-11-06 21:00:00+01:00,13°,5°,0mm
+Montpellier,2,"['F. Mollet', 'A. Delort']",Bordeaux,0,[],Bordeaux,2020/11/07,10,aquitaine,2020-11-07 17:00:00+01:00,18°,16°,4mm
+Rennes,0,[],Paris-SG,3,"['M. Kean', 'A. Di', 'D. Da']",Paris,2020/11/07,10,ile-de-france,2020-11-07 21:00:00+01:00,17°,10°,0mm
+Lille,2,"['+3 B.', 'B. Yilmaz']",Brest,3,"['R. Pierre-Gabriel', 'R. Perraud', 'I. Cardona']",Brest,2020/11/08,10,bretagne,2020-11-08 13:00:00+01:00,17°,13°,1mm
+Reims,4,"['M. Cafaro', 'B. Dia', 'F. Medina', 'B. Dia']",Lens,4,"['S. Banza', 'T. Foket', 'F. Sotoca', 'F. Sotoca']",Lens,2020/11/08,10,nord-pas-de-calais,2020-11-08 15:00:00+01:00,16°,10°,0mm
+Dijon,1,['M. Baldé'],Metz,1,['P. Yade'],Metz,2020/11/08,10,lorraine,2020-11-08 15:00:00+01:00,14°,9°,1mm
+Angers,5,"['M. Pereira', 'S. Bahoken', 'S. Bahoken', 'L. Diony', '+4 J.']",Nîmes,1,['M. Koné'],Nîmes,2020/11/08,10,languedoc-roussillon,2020-11-08 15:00:00+01:00,19°,15°,33mm
+Nantes,2,"['A. Bamba', 'L. Blas']",Lorient,0,[],Lorient,2020/11/08,10,bretagne,2020-11-08 15:00:00+01:00,17°,14°,1mm
+Monaco,2,"['A. Disasi', 'S. Diop']",Nice,1,['P. Lees-Melou'],Nice,2020/11/08,10,provence-alpes-c-te-d-azur,2020-11-08 17:00:00+01:00,17°,15°,1mm
+Saint-Étienne,1,['A. Lopes'],Lyon,2,"['T. Kadewere', 'T. Kadewere']",Lyon,2020/11/08,10,rh-ne-alpes,2020-11-08 21:00:00+01:00,15°,12°,4mm
+Bordeaux,1,['H. Ben'],Rennes,0,[],Rennes,2020/11/20,11,bretagne,2020-11-20 19:00:00+01:00,11°,4°,0mm
+Paris-SG,2,"['K. Mbappé', 'K. Mbappé']",Monaco,3,"['K. Volland', 'K. Volland', 'F. Fabregas']",Monaco,2020/11/20,11,provence-alpes-c-te-d-azur,2020-11-20 21:00:00+01:00,15°,14°,3mm
+Saint-Étienne,1,['M. Camara'],Brest,4,"['F. Honorat', 'J. Duverne', 'I. Cardona', 'S. Mounié']",Brest,2020/11/21,11,bretagne,2020-11-21 17:00:00+01:00,12°,9°,1mm
+Metz,1,['+4 A.'],Nantes,1,['R. Kolo'],Nantes,2020/11/22,11,pays-de-la-loire,2020-11-22 13:00:00+01:00,12°,6°,0mm
+Strasbourg,3,"['K. Lala', 'H. Diallo', 'L. Ajorque']",Montpellier,4,"['P. Mendes', 'A. Delort', 'A. Delort', 'G. Laborde']",Montpellier,2020/11/22,11,languedoc-roussillon,2020-11-22 15:00:00+01:00,12°,6°,0mm
+Lens,1,['A. Kalimuendo'],Dijon,0,[],Dijon,2020/11/22,11,bourgogne,2020-11-22 15:00:00+01:00,6°,1°,0mm
+Nîmes,1,['R. Ripart'],Reims,0,[],Reims,2020/11/22,11,champagne-ardenne,2020-11-22 15:00:00+01:00,9°,4°,0mm
+Lyon,1,['T. Kadewere'],Angers,0,[],Angers,2020/11/22,11,pays-de-la-loire,2020-11-22 17:00:00+01:00,11°,5°,0mm
+Lorient,0,[],Lille,4,"['Y. Yazici', 'Y. Yazici', 'L. Araujo', 'J. David']",Lille,2020/11/22,11,nord-pas-de-calais,2020-11-22 21:00:00+01:00,11°,10°,4mm
+Nice,2,"['A. Gouiri', 'M. Sellouki']",Marseille,3,"['A. Gonzalez', 'S. Khaoui', 'S. Khaoui']",Marseille,2021/02/17,11,provence-alpes-c-te-d-azur,2021-02-17 21:00:00+01:00,13°,10°,1mm
+Rennes,1,['A. Hunou'],Strasbourg,1,['A. Thomasson'],Strasbourg,2020/11/27,12,alsace,2020-11-27 21:00:00+01:00,8°,3°,0mm
+Nantes,1,['L. Blas'],Marseille,3,"['F. Thauvin', 'D. Payet', 'D. Benedetto']",Marseille,2020/11/28,12,provence-alpes-c-te-d-azur,2020-11-28 17:00:00+01:00,16°,15°,4mm
+Bordeaux,2,"['T. Pembélé', 'Y. Adli']",Paris-SG,2,"['Neymar 27’', 'M. Kean']",Paris,2020/11/28,12,ile-de-france,2020-11-28 21:00:00+01:00,12°,7°,0mm
+Reims,0,[],Lyon,3,"['K. Toko', 'B. Guimaraes', 'M. Dembélé']",Lyon,2020/11/29,12,rh-ne-alpes,2020-11-29 13:00:00+01:00,6°,4°,0mm
+Angers,3,"['M. Pereira', 'S. Bahoken', '+2 P.']",Lens,1,['A. Kalimuendo'],Lens,2020/11/29,12,nord-pas-de-calais,2020-11-29 15:00:00+01:00,7°,4°,0mm
+Montpellier,1,['P. Skuletic'],Lorient,0,[],Lorient,2020/11/29,12,bretagne,2020-11-29 15:00:00+01:00,12°,7°,0mm
+Nîmes,0,[],Monaco,3,"['S. Diop', 'G. Martins', 'K. Volland']",Monaco,2020/11/29,12,provence-alpes-c-te-d-azur,2020-11-29 15:00:00+01:00,16°,13°,0mm
+Brest,2,"['I. Cardona', 'I. Cardona']",Metz,0,[],Metz,2020/11/29,12,lorraine,2020-11-29 15:00:00+01:00,2°,0°,0mm
+Dijon,3,"['M. Baldé', 'G. Ngonda', 'M. Baldé']",Nice,1,['A. Gouiri'],Nice,2020/11/29,12,provence-alpes-c-te-d-azur,2020-11-29 17:00:00+01:00,15°,13°,0mm
+Lille,1,['J. Ikoné'],Saint-Étienne,1,['W. Khazri'],Saint-Étienne,2020/11/29,12,rh-ne-alpes,2020-11-29 21:00:00+01:00,8°,-1°,0mm
+Marseille,2,"['D. Benedetto', 'V. Germain']",Nîmes,0,[],Nîmes,2020/12/04,13,languedoc-roussillon,2020-12-04 21:00:00+01:00,10°,8°,2mm
+Lens,2,"['A. Kalimuendo', 'I. Ganago']",Rennes,0,[],Rennes,2020/12/05,13,bretagne,2020-12-05 17:00:00+01:00,6°,2°,6mm
+Paris-SG,3,"['C. Dagba', 'M. Kean', '+1 K.']",Montpellier,1,['S. Mavididi'],Montpellier,2020/12/05,13,languedoc-roussillon,2020-12-05 21:00:00+01:00,11°,5°,0mm
+Monaco,1,['P. Pellegri'],Lille,2,"['J. David', 'Y. Yazici']",Lille,2020/12/06,13,nord-pas-de-calais,2020-12-06 13:00:00+01:00,5°,2°,0mm
+Lorient,0,[],Angers,2,"['A. Fulgini', 'P. Capelle']",Angers,2020/12/06,13,pays-de-la-loire,2020-12-06 15:00:00+01:00,6°,2°,2mm
+Brest,0,[],Bordeaux,1,['H. Ben'],Bordeaux,2020/12/06,13,aquitaine,2020-12-06 15:00:00+01:00,10°,7°,4mm
+Strasbourg,4,"['D. Liénard', 'H. Diallo', 'L. Ajorque', 'K. Zohi']",Nantes,0,[],Nantes,2020/12/06,13,pays-de-la-loire,2020-12-06 15:00:00+01:00,8°,5°,4mm
+Saint-Étienne,0,[],Dijon,0,[],Dijon,2020/12/06,13,bourgogne,2020-12-06 15:00:00+01:00,4°,-1°,0mm
+Nice,0,[],Reims,0,[],Reims,2020/12/06,13,champagne-ardenne,2020-12-06 17:00:00+01:00,5°,0°,0mm
+Lyon,3,"['M. Depay', 'K. Toko', 'K. Toko']",Metz,1,['F. Boulaya'],Metz,2020/12/06,13,lorraine,2020-12-06 21:00:00+01:00,4°,1°,0mm
+Angers,0,[],Saint-Étienne,0,[],Saint-Étienne,2020/12/11,14,rh-ne-alpes,2020-12-11 21:00:00+01:00,7°,4°,12mm
+Monaco,1,['W. Ben'],Marseille,2,"['F. Thauvin', 'D. Benedetto']",Marseille,2020/12/12,14,provence-alpes-c-te-d-azur,2020-12-12 17:00:00+01:00,12°,9°,7mm
+Montpellier,3,"['S. Mavididi', 'P. Mendes', 'G. Laborde']",Lens,2,"['J. Omlin', 'G. Kakuta']",Lens,2020/12/12,14,nord-pas-de-calais,2020-12-12 21:00:00+01:00,9°,7°,3mm
+Rennes,1,['M. Niang'],Nice,0,[],Nice,2020/12/13,14,provence-alpes-c-te-d-azur,2020-12-13 13:00:00+01:00,13°,9°,0mm
+Reims,1,['A. Zeneli'],Brest,2,"['F. Honorat', 'S. Mounié']",Brest,2020/12/13,14,bretagne,2020-12-13 15:00:00+01:00,13°,10°,10mm
+Metz,2,"['D. Bronn', 'O. Nguette']",Strasbourg,2,"['M. Simakan', 'A. Thomasson']",Strasbourg,2020/12/13,14,alsace,2020-12-13 15:00:00+01:00,8°,6°,3mm
+Dijon,1,['M. Konaté'],Nantes,1,['M. Simon'],Nantes,2020/12/13,14,pays-de-la-loire,2020-12-13 15:00:00+01:00,12°,7°,2mm
+Nîmes,0,[],Lorient,3,"['Q. Boisgard', 'P. Hamel', 'Y. Wissa']",Lorient,2020/12/13,14,bretagne,2020-12-13 15:00:00+01:00,14°,10°,13mm
+Bordeaux,1,['T. Basic'],Lille,2,"['J. Bamba', 'J. Fonte']",Lille,2020/12/13,14,nord-pas-de-calais,2020-12-13 17:00:00+01:00,7°,4°,1mm
+Lyon,1,['T. Kadewere'],Paris-SG,0,[],Paris,2020/12/13,14,ile-de-france,2020-12-13 21:00:00+01:00,7°,5°,1mm
+Lille,2,"['Y. Yazici', '+3 T.']",Dijon,0,[],Dijon,2020/12/16,15,bourgogne,2020-12-16 19:00:00+01:00,10°,7°,1mm
+Metz,2,"['A. Leya', 'H. Maïga']",Montpellier,0,[],Montpellier,2020/12/16,15,languedoc-roussillon,2020-12-16 19:00:00+01:00,14°,12°,9mm
+Strasbourg,2,"['H. Diallo', '+1 L.']",Angers,0,[],Angers,2020/12/16,15,pays-de-la-loire,2020-12-16 19:00:00+01:00,12°,6°,2mm
+Nice,2,"['D. Ndoye', '+4 A.']",Nîmes,0,[],Nîmes,2020/12/16,15,languedoc-roussillon,2020-12-16 19:00:00+01:00,15°,11°,5mm
+Nantes,2,"['N. Pallois', 'L. Blas']",Reims,3,"['E. Touré', 'B. Dia', 'M. Cafaro']",Reims,2020/12/16,15,champagne-ardenne,2020-12-16 19:00:00+01:00,9°,5°,0mm
+Brest,2,"['A. Lopes', '+3 R.']",Lyon,2,"['M. Depay', 'M. Cornet']",Lyon,2020/12/16,15,rh-ne-alpes,2020-12-16 21:00:00+01:00,12°,7°,24mm
+Lorient,0,[],Paris-SG,2,"['K. Mbappé', 'M. Kean']",Paris,2020/12/16,15,ile-de-france,2020-12-16 21:00:00+01:00,10°,7°,0mm
+Marseille,1,['P. Gueye'],Rennes,2,"['H. Traoré', 'A. Hunou']",Rennes,2020/12/16,15,bretagne,2020-12-16 21:00:00+01:00,11°,8°,1mm
+Lens,3,"['I. Sylla', 'S. Banza', 'G. Kakuta']",Monaco,0,[],Monaco,2020/12/16,15,provence-alpes-c-te-d-azur,2020-12-16 21:00:00+01:00,14°,12°,1mm
+Saint-Étienne,2,"['A. Nordin', 'Y. Neyou']",Bordeaux,1,['U. Hwang'],Bordeaux,2020/12/16,15,aquitaine,2020-12-16 21:00:00+01:00,13°,8°,1mm
+Lens,0,[],Metz,2,"['O. Nguette', 'F. Boulaya']",Metz,2020/12/19,16,lorraine,2020-12-19 17:00:00+01:00,10°,7°,1mm
+Reims,1,['Y. Nagatomo'],Marseille,1,['F. Thauvin'],Marseille,2020/12/19,16,provence-alpes-c-te-d-azur,2020-12-19 19:00:00+01:00,15°,13°,1mm
+Lyon,4,"['M. Depay', 'T. Kadewere', 'K. Toko', 'H. Aouar']",Nice,1,['A. Gouiri'],Nice,2020/12/19,16,provence-alpes-c-te-d-azur,2020-12-19 21:00:00+01:00,13°,12°,4mm
+Montpellier,2,"['+1 G.', 'A. Delort']",Brest,2,"['R. Philippoteaux', 'B. Chardonnet']",Brest,2020/12/20,16,bretagne,2020-12-20 13:00:00+01:00,11°,9°,5mm
+Monaco,1,['K. Volland'],Dijon,0,[],Dijon,2020/12/20,16,bourgogne,2020-12-20 15:00:00+01:00,10°,8°,18mm
+Angers,1,['R. Thomas'],Nantes,1,['C. Traoré'],Nantes,2020/12/20,16,pays-de-la-loire,2020-12-20 15:00:00+01:00,12°,8°,1mm
+Bordeaux,2,"['Pablo', 'Otavio']",Strasbourg,0,[],Strasbourg,2020/12/20,16,alsace,2020-12-20 15:00:00+01:00,8°,7°,14mm
+Nîmes,2,"['M. Ahlinvi', 'R. Ripart']",Saint-Étienne,2,"['H. Moukoudi', 'A. Nordin']",Saint-Étienne,2020/12/20,16,rh-ne-alpes,2020-12-20 15:00:00+01:00,9°,8°,15mm
+Rennes,3,"['D. Da', 'B. Bourigeaud', 'M. Terrier']",Lorient,0,[],Lorient,2020/12/20,16,bretagne,2020-12-20 17:00:00+01:00,12°,10°,5mm
+Paris-SG,0,[],Lille,0,[],Lille,2020/12/20,16,nord-pas-de-calais,2020-12-20 21:00:00+01:00,9°,7°,0mm
+Metz,0,[],Rennes,1,['C. Grenier'],Rennes,2020/12/23,17,bretagne,2020-12-23 19:00:00+01:00,14°,12°,21mm
+Brest,1,['+4 G.'],Lens,2,"['A. Kalimuendo', 'F. Sotoca']",Lens,2020/12/23,17,nord-pas-de-calais,2020-12-23 19:00:00+01:00,12°,10°,35mm
+Reims,3,"['Y. Abdelhamid', 'B. Dia', 'M. Munetsi']",Bordeaux,1,['U. Hwang'],Bordeaux,2020/12/23,17,aquitaine,2020-12-23 19:00:00+01:00,15°,11°,1mm
+Lorient,2,"['T. Moffi', 'A. Grbic']",Nice,2,"['J. Lotomba', 'J. Reine-Adélaïde']",Nice,2020/12/23,17,provence-alpes-c-te-d-azur,2020-12-23 19:00:00+01:00,13°,12°,0mm
+Dijon,3,"['M. Konaté', 'M. Baldé', '+4 M.']",Nîmes,1,['M. Ahlinvi'],Nîmes,2020/12/23,17,languedoc-roussillon,2020-12-23 19:00:00+01:00,14°,10°,1mm
+Lille,3,"['T. Weah', 'J. Ikoné', 'B. Yilmaz']",Montpellier,2,"['G. Laborde', 'A. Delort']",Montpellier,2020/12/23,17,languedoc-roussillon,2020-12-23 21:00:00+01:00,13°,12°,1mm
+Nantes,0,[],Lyon,3,"['K. Toko', 'T. Kadewere', 'L. Paqueta']",Lyon,2020/12/23,17,rh-ne-alpes,2020-12-23 21:00:00+01:00,13°,9°,0mm
+Strasbourg,0,[],Paris-SG,4,"['T. Pembélé', 'K. Mbappé', 'I. Gueye', 'M. Kean']",Paris,2020/12/23,17,ile-de-france,2020-12-23 21:00:00+01:00,13°,12°,18mm
+Marseille,1,['V. Rongier'],Angers,2,"['M. Pereira', 'L. Diony']",Angers,2020/12/23,17,pays-de-la-loire,2020-12-23 21:00:00+01:00,13°,12°,6mm
+Saint-Étienne,2,"['M. Debuchy', 'D. Bouanga']",Monaco,2,"['S. Diop', 'K. Volland']",Monaco,2020/12/23,17,provence-alpes-c-te-d-azur,2020-12-23 21:00:00+01:00,14°,13°,0mm
+Rennes,0,[],Nantes,0,[],Nantes,2021/01/06,18,pays-de-la-loire,2021-01-06 19:00:00+01:00,3°,-2°,0mm
+Monaco,5,"['A. Disasi', 'A. Golovine', 'K. Volland', 'S. Diop', 'G. Maripan']",Lorient,2,"['T. Moffi', 'A. Gravillon']",Lorient,2021/01/06,18,bretagne,2021-01-06 19:00:00+01:00,4°,0°,0mm
+Bordeaux,0,[],Metz,0,[],Metz,2021/01/06,18,lorraine,2021-01-06 19:00:00+01:00,1°,0°,2mm
+Nice,0,[],Brest,2,"['S. Mounié', 'F. Honorat']",Brest,2021/01/06,18,bretagne,2021-01-06 19:00:00+01:00,5°,3°,8mm
+Nîmes,0,[],Strasbourg,5,"['L. Ajorque', 'H. Diallo', 'K. Lala', 'L. Ajorque', 'A. Waris']",Strasbourg,2021/01/06,18,alsace,2021-01-06 19:00:00+01:00,2°,1°,6mm
+Lens,2,"['F. Sotoca', 'C. Doucouré']",Lyon,3,"['M. Depay', 'S. Fortes', 'M. Depay']",Lyon,2021/01/06,18,rh-ne-alpes,2021-01-06 21:00:00+01:00,1°,-1°,1mm
+Angers,2,"['R. Thomas', 'R. Thomas']",Lille,1,['B. Yilmaz'],Lille,2021/01/06,18,nord-pas-de-calais,2021-01-06 21:00:00+01:00,3°,1°,2mm
+Paris-SG,1,['M. Kean'],Saint-Étienne,1,['R. Hamouma'],Saint-Étienne,2021/01/06,18,rh-ne-alpes,2021-01-06 21:00:00+01:00,-1°,-5°,1mm
+Montpellier,1,['F. Mollet'],Marseille,3,"['N. Radonjic', 'D. Payet', 'V. Germain']",Marseille,2021/01/06,18,provence-alpes-c-te-d-azur,2021-01-06 21:00:00+01:00,6°,3°,0mm
+Dijon,0,[],Reims,0,[],Reims,2021/01/06,18,champagne-ardenne,2021-01-06 21:00:00+01:00,2°,0°,1mm
+Lyon,2,"['M. Depay', 'J. Denayer']",Rennes,2,"['C. Grenier', 'B. Bourigeaud']",Rennes,2021/01/09,19,bretagne,2021-01-09 21:00:00+01:00,4°,-2°,0mm
+Brest,0,[],Paris-SG,3,"['M. Kean', 'M. Icardi', 'P. Sarabia']",Paris,2021/01/09,19,ile-de-france,2021-01-09 21:00:00+01:00,3°,1°,0mm
+Lille,1,['B. Yilmaz'],Nîmes,0,[],Nîmes,2021/01/09,19,languedoc-roussillon,2021-01-09 21:00:00+01:00,4°,1°,0mm
+Marseille,0,[],Dijon,0,[],Dijon,2021/01/09,19,bourgogne,2021-01-09 21:00:00+01:00,1°,-3°,0mm
+Angers,0,[],Monaco,3,"['G. Maripan', 'K. Volland', 'S. Jovetic']",Monaco,2021/01/09,19,provence-alpes-c-te-d-azur,2021-01-09 21:00:00+01:00,7°,5°,1mm
+Strasbourg,1,['H. Diallo'],Lens,0,[],Lens,2021/01/09,19,nord-pas-de-calais,2021-01-09 21:00:00+01:00,4°,1°,1mm
+Nantes,1,['I. Louza'],Montpellier,1,['A. Oyongo'],Montpellier,2021/01/09,19,languedoc-roussillon,2021-01-09 21:00:00+01:00,6°,3°,0mm
+Nice,1,['A. Gouiri'],Metz,1,['J. Boye'],Metz,2021/01/09,19,lorraine,2021-01-09 21:00:00+01:00,0°,-3°,1mm
+Lorient,1,['T. Moffi'],Bordeaux,2,"['R. Oudin', 'R. Oudin']",Bordeaux,2021/01/09,19,aquitaine,2021-01-09 21:00:00+01:00,5°,0°,0mm
+Saint-Étienne,1,['C. Abi'],Reims,3,"['B. Dia', 'B. Dia', 'M. Cafaro']",Reims,2021/01/09,19,champagne-ardenne,2021-01-09 21:00:00+01:00,2°,-1°,0mm
+Monaco,3,"['K. Volland', 'W. Ben', 'W. Ben']",Montpellier,2,"['S. Wahi', 'A. Delort']",Montpellier,2021/01/15,20,languedoc-roussillon,2021-01-15 21:00:00+01:00,11°,9°,0mm
+Nîmes,2,"['N. Eliasson', 'N. Eliasson']",Marseille,1,['D. Benedetto'],Marseille,2021/01/16,20,provence-alpes-c-te-d-azur,2021-01-16 17:00:00+01:00,7°,5°,0mm
+Paris-SG,1,['L. Kurzawa'],Angers,0,[],Angers,2021/01/16,20,pays-de-la-loire,2021-01-16 21:00:00+01:00,5°,1°,4mm
+Rennes,2,"['B. Bourigeaud', 'C. Grenier']",Brest,1,['F. Honorat'],Brest,2021/01/17,20,bretagne,2021-01-17 13:00:00+01:00,8°,6°,0mm
+Lens,1,['G. Kakuta'],Nantes,1,['I. Louza'],Nantes,2021/01/17,20,pays-de-la-loire,2021-01-17 15:00:00+01:00,8°,4°,0mm
+Bordeaux,3,"['U. Hwang', 'P. Baysse', 'T. Basic']",Nice,0,[],Nice,2021/01/17,20,provence-alpes-c-te-d-azur,2021-01-17 15:00:00+01:00,10°,7°,1mm
+Saint-Étienne,0,[],Strasbourg,1,['L. Ajorque'],Strasbourg,2021/01/17,20,alsace,2021-01-17 15:00:00+01:00,2°,0°,8mm
+Reims,1,['A. Zeneli'],Lille,2,"['J. Bamba', 'J. David']",Lille,2021/01/17,20,nord-pas-de-calais,2021-01-17 17:00:00+01:00,4°,2°,1mm
+Metz,1,['+1 A.'],Lyon,0,[],Lyon,2021/01/17,20,rh-ne-alpes,2021-01-17 21:00:00+01:00,5°,1°,5mm
+Dijon,2,"['B. Ecuele', 'M. Baldé']",Lorient,3,"['T. Chalobah', 'T. Moffi', 'A. Gravillon']",Lorient,2021/01/27,20,bretagne,2021-01-27 21:00:00+01:00,12°,10°,9mm
+Montpellier,0,[],Paris-SG,4,"['K. Mbappé', 'Neymar 60’', 'M. Icardi', 'K. Mbappé']",Paris,2021/01/22,21,ile-de-france,2021-01-22 21:00:00+01:00,7°,5°,12mm
+Nice,1,['Y. Atal'],Lens,0,[],Lens,2021/01/23,21,nord-pas-de-calais,2021-01-23 17:00:00+01:00,5°,3°,1mm
+Marseille,1,['N. Radonjic'],Monaco,3,"['G. Maripan', 'A. Tchouaméni', 'S. Jovetic']",Monaco,2021/01/23,21,provence-alpes-c-te-d-azur,2021-01-23 21:00:00+01:00,12°,8°,7mm
+Angers,1,['A. Fulgini'],Bordeaux,2,"['U. Hwang', 'U. Hwang']",Bordeaux,2021/01/24,21,aquitaine,2021-01-24 13:00:00+01:00,10°,6°,7mm
+Nantes,0,[],Metz,2,"['A. Leya', 'F. Boulaya']",Metz,2021/01/24,21,lorraine,2021-01-24 15:00:00+01:00,2°,0°,3mm
+Brest,0,[],Reims,1,['N. Mbuku'],Reims,2021/01/24,21,champagne-ardenne,2021-01-24 15:00:00+01:00,3°,-1°,4mm
+Strasbourg,1,['L. Ajorque'],Dijon,1,['S. Coulibaly'],Dijon,2021/01/24,21,bourgogne,2021-01-24 15:00:00+01:00,4°,-1°,1mm
+Lille,1,['J. David'],Rennes,0,[],Rennes,2021/01/24,21,bretagne,2021-01-24 17:00:00+01:00,6°,0°,1mm
+Lyon,5,"['T. Kadewere', 'Marcelo', 'Marcelo', 'T. Kadewere', 'D. Bouanga']",Saint-Étienne,0,[],Saint-Étienne,2021/01/24,21,rh-ne-alpes,2021-01-24 21:00:00+01:00,4°,-1°,1mm
+Lorient,0,[],Nîmes,1,['R. Ripart'],Nîmes,2021/02/24,21,languedoc-roussillon,2021-02-24 19:00:00+01:00,17°,10°,0mm
+Bordeaux,1,['S. Kalu'],Lyon,2,"['K. Toko', 'L. Dubois']",Lyon,2021/01/29,22,rh-ne-alpes,2021-01-29 21:00:00+01:00,13°,10°,11mm
+Lens,2,"['C. Doucouré', 'G. Kakuta']",Montpellier,1,['S. Wahi'],Montpellier,2021/01/30,22,languedoc-roussillon,2021-01-30 17:00:00+01:00,12°,10°,5mm
+Saint-Étienne,1,['C. Abi'],Nice,0,[],Nice,2021/01/31,22,provence-alpes-c-te-d-azur,2021-01-31 13:00:00+01:00,13°,10°,5mm
+Paris-SG,2,"['Neymar (s.p.)', 'Neymar (s.p.)']",Lorient,3,"['L. Abergel', 'Y. Wissa', 'T. Moffi']",Lorient,2021/01/31,22,bretagne,2021-01-31 15:00:00+01:00,10°,8°,10mm
+Metz,4,"['F. Boulaya', 'P. Sarr', 'P. Yade', 'V. Dias']",Brest,2,"['F. Honorat', 'I. Cardona']",Brest,2021/01/31,22,bretagne,2021-01-31 15:00:00+01:00,10°,8°,10mm
+Nîmes,1,['R. Ripart'],Angers,3,"['P. Capelle', 'L. Coulibaly', 'L. Diony']",Angers,2021/01/31,22,pays-de-la-loire,2021-01-31 15:00:00+01:00,10°,9°,10mm
+Reims,1,['D. Kutesa'],Strasbourg,0,[],Strasbourg,2021/01/31,22,alsace,2021-01-31 15:00:00+01:00,3°,2°,3mm
+Dijon,0,[],Lille,1,['Y. Yazici'],Lille,2021/01/31,22,nord-pas-de-calais,2021-01-31 17:00:00+01:00,3°,-1°,0mm
+Monaco,2,"['G. Maripan', 'K. Volland']",Nantes,1,['R. Emond'],Nantes,2021/01/31,22,pays-de-la-loire,2021-01-31 21:00:00+01:00,10°,9°,5mm
+Rennes,0,[],Marseille,1,['M. Cuisance'],Marseille,2021/03/10,22,provence-alpes-c-te-d-azur,2021-03-10 19:00:00+01:00,16°,8°,0mm
+Lille,3,"['Y. Yazici', 'T. Weah', 'J. David']",Bordeaux,0,[],Bordeaux,2021/02/03,23,aquitaine,2021-02-03 19:00:00+01:00,14°,12°,3mm
+Lorient,1,['Q. Boisgard'],Rennes,1,['M. Terrier'],Rennes,2021/02/03,23,bretagne,2021-02-03 19:00:00+01:00,11°,9°,12mm
+Montpellier,1,['G. Laborde'],Metz,1,['P. Sarr'],Metz,2021/02/03,23,lorraine,2021-02-03 19:00:00+01:00,11°,9°,27mm
+Angers,0,[],Reims,0,[],Reims,2021/02/03,23,champagne-ardenne,2021-02-03 19:00:00+01:00,11°,9°,14mm
+Brest,2,"['G. Charbonnier', '+4 J.']",Strasbourg,2,"['A. Thomasson', 'J. Aholou']",Strasbourg,2021/02/03,23,alsace,2021-02-03 19:00:00+01:00,11°,9°,11mm
+Lyon,1,['L. Paqueta'],Dijon,0,[],Dijon,2021/02/03,23,bourgogne,2021-02-03 21:00:00+01:00,12°,9°,1mm
+Nîmes,0,[],Paris-SG,3,"['A. Di', 'P. Sarabia', 'K. Mbappé']",Paris,2021/02/03,23,ile-de-france,2021-02-03 21:00:00+01:00,12°,10°,12mm
+Nice,1,['P. Lees-Melou'],Monaco,2,"['W. Ben', 'W. Ben']",Monaco,2021/02/03,23,provence-alpes-c-te-d-azur,2021-02-03 21:00:00+01:00,13°,11°,0mm
+Marseille,2,"['F. Thauvin', '+2 A.']",Lens,2,"['F. Sotoca', 'F. Medina']",Lens,2021/02/03,23,nord-pas-de-calais,2021-02-03 21:00:00+01:00,10°,8°,21mm
+Nantes,1,['R. Kolo'],Saint-Étienne,1,['M. Camara'],Saint-Étienne,2021/02/03,23,rh-ne-alpes,2021-02-03 21:00:00+01:00,12°,8°,0mm
+Reims,0,[],Lorient,1,['L. Abergel'],Lorient,2021/02/06,24,bretagne,2021-02-06 17:00:00+01:00,9°,5°,0mm
+Strasbourg,0,[],Lyon,3,"['M. Depay', 'K. Toko', 'M. Depay']",Lyon,2021/02/06,24,rh-ne-alpes,2021-02-06 19:00:00+01:00,15°,10°,1mm
+Rennes,0,[],Lens,0,[],Lens,2021/02/06,24,nord-pas-de-calais,2021-02-06 21:00:00+01:00,8°,7°,16mm
+Bordeaux,1,['U. Hwang'],Brest,2,"['S. Mounié', 'R. Faivre']",Brest,2021/02/07,24,bretagne,2021-02-07 13:00:00+01:00,6°,5°,1mm
+Monaco,4,"['A. Golovine', 'A. Golovine', 'A. Golovine', 'K. Volland']",Nîmes,3,"['L. Deaux', 'Z. Ferhat', 'N. Eliasson']",Nîmes,2021/02/07,24,languedoc-roussillon,2021-02-07 15:00:00+01:00,13°,10°,1mm
+Metz,0,[],Saint-Étienne,1,['J. Boye'],Saint-Étienne,2021/02/07,24,rh-ne-alpes,2021-02-07 15:00:00+01:00,8°,6°,25mm
+Angers,0,[],Nice,3,"['S. Doumbia', 'M. Maolida', 'A. Gouiri']",Nice,2021/02/07,24,provence-alpes-c-te-d-azur,2021-02-07 15:00:00+01:00,13°,12°,10mm
+Dijon,2,"['S. Coulibaly', 'M. Konaté']",Montpellier,4,"['G. Laborde', 'G. Laborde', 'T. Savanier', 'P. Skuletic']",Montpellier,2021/02/07,24,languedoc-roussillon,2021-02-07 15:00:00+01:00,12°,10°,1mm
+Lille,2,"['J. David', 'J. David']",Nantes,0,[],Nantes,2021/02/07,24,pays-de-la-loire,2021-02-07 17:00:00+01:00,8°,4°,1mm
+Paris-SG,2,"['K. Mbappé', 'M. Icardi']",Marseille,0,[],Marseille,2021/02/07,24,provence-alpes-c-te-d-azur,2021-02-07 21:00:00+01:00,12°,11°,4mm
+Nice,1,['R. Lopes'],Paris-SG,2,"['J. Draxler', 'M. Kean']",Paris,2021/02/13,25,ile-de-france,2021-02-13 17:00:00+01:00,1°,-4°,0mm
+Lens,1,['F. Sotoca'],Reims,1,['A. Zeneli'],Reims,2021/02/13,25,champagne-ardenne,2021-02-13 19:00:00+01:00,0°,-5°,0mm
+Montpellier,2,"['T. Savanier', 'S. Wahi']",Lyon,1,['L. Paqueta'],Lyon,2021/02/13,25,rh-ne-alpes,2021-02-13 21:00:00+01:00,-2°,-5°,3mm
+Lorient,2,"['T. Moffi', 'T. Moffi']",Monaco,2,"['W. Ben', 'W. Ben']",Monaco,2021/02/14,25,provence-alpes-c-te-d-azur,2021-02-14 13:00:00+01:00,8°,5°,1mm
+Saint-Étienne,2,"['D. Bouanga', 'A. Nordin']",Rennes,0,[],Rennes,2021/02/14,25,bretagne,2021-02-14 15:00:00+01:00,5°,-3°,1mm
+Strasbourg,2,"['A. Thomasson', 'A. Thomasson']",Metz,1,['T. Delaine'],Metz,2021/02/14,25,lorraine,2021-02-14 15:00:00+01:00,2°,-5°,0mm
+Nantes,3,"['M. Simon', 'I. Louza', 'A. Bamba']",Angers,1,['T. Mangani'],Angers,2021/02/14,25,pays-de-la-loire,2021-02-14 15:00:00+01:00,6°,-3°,0mm
+Nîmes,2,"['R. Ripart', 'N. Eliasson']",Dijon,0,[],Dijon,2021/02/14,25,bourgogne,2021-02-14 15:00:00+01:00,2°,-7°,0mm
+Brest,0,[],Lille,0,[],Lille,2021/02/14,25,nord-pas-de-calais,2021-02-14 17:05:00+01:00,3°,-3°,0mm
+Marseille,0,[],Bordeaux,0,[],Bordeaux,2021/02/14,25,aquitaine,2021-02-14 21:00:00+01:00,12°,4°,0mm
+Lyon,3,"['L. Paqueta', 'H. Aouar', 'M. Depay']",Brest,2,"['B. Chardonnet', 'I. Cardona']",Brest,2021/02/19,26,bretagne,2021-02-19 21:00:00+01:00,11°,9°,3mm
+Reims,1,['E. Touré'],Saint-Étienne,1,['C. Abi'],Saint-Étienne,2021/02/20,26,rh-ne-alpes,2021-02-20 13:00:00+01:00,14°,4°,0mm
+Marseille,1,['D. Payet'],Nantes,1,['L. Blas'],Nantes,2021/02/20,26,pays-de-la-loire,2021-02-20 17:00:00+01:00,17°,11°,0mm
+Rennes,1,['S. Guirassy'],Montpellier,2,"['S. Mavididi', 'S. Mavididi']",Montpellier,2021/02/21,26,languedoc-roussillon,2021-02-21 13:00:00+01:00,13°,10°,0mm
+Dijon,1,['G. Ngonda'],Lens,2,"['S. Fofana', 'S. Banza']",Lens,2021/02/21,26,nord-pas-de-calais,2021-02-21 15:00:00+01:00,14°,8°,0mm
+Metz,2,"['B. Kouyaté', 'M. Gueye']",Nice,1,['A. Gouiri'],Nice,2021/02/21,26,provence-alpes-c-te-d-azur,2021-02-21 15:00:00+01:00,13°,10°,0mm
+Angers,0,[],Strasbourg,0,[],Strasbourg,2021/02/21,26,alsace,2021-02-21 15:00:00+01:00,16°,8°,0mm
+Bordeaux,0,[],Nîmes,2,"['B. Meling', 'R. Ripart']",Nîmes,2021/02/21,26,languedoc-roussillon,2021-02-21 15:00:00+01:00,16°,9°,0mm
+Lille,4,"['A. Gravillon', 'J. Fonte', 'J. Ikoné', '+1 D.']",Lorient,1,['J. Hergault'],Lorient,2021/02/21,26,bretagne,2021-02-21 17:05:00+01:00,12°,10°,2mm
+Monaco,2,"['S. Diop', 'G. Maripan']",Paris-SG,0,[],Paris,2021/02/21,26,ile-de-france,2021-02-21 21:00:00+01:00,15°,9°,0mm
+Nice,2,"['A. Gouiri', 'F. Daniliuc']",Rennes,1,['M. Terrier'],Rennes,2021/02/26,27,bretagne,2021-02-26 21:00:00+01:00,10°,3°,0mm
+Metz,2,"['T. Delaine', '+1 V.']",Bordeaux,1,['S. Kalu'],Bordeaux,2021/02/27,27,aquitaine,2021-02-27 13:00:00+01:00,13°,6°,0mm
+Paris-SG,4,"['M. Kean', 'K. Mbappé', 'K. Mbappé', 'D. Pereira']",Dijon,0,[],Dijon,2021/02/27,27,bourgogne,2021-02-27 17:00:00+01:00,10°,5°,3mm
+Brest,0,[],Monaco,2,"['S. Jovetic', 'K. Volland']",Monaco,2021/02/28,27,provence-alpes-c-te-d-azur,2021-02-28 13:00:00+01:00,15°,13°,0mm
+Lens,2,"['J. Clauss', '+2 A.']",Angers,2,"['L. Diony', 'T. Mangani']",Angers,2021/02/28,27,pays-de-la-loire,2021-02-28 15:00:00+01:00,10°,3°,0mm
+Montpellier,0,[],Reims,0,[],Reims,2021/02/28,27,champagne-ardenne,2021-02-28 15:00:00+01:00,11°,3°,0mm
+Saint-Étienne,1,['H. Moukoudi'],Lorient,2,"['A. Laurienté', 'A. Laurienté']",Lorient,2021/02/28,27,bretagne,2021-02-28 15:00:00+01:00,11°,4°,0mm
+Nantes,1,['L. Blas'],Nîmes,1,['M. Koné'],Nîmes,2021/02/28,27,languedoc-roussillon,2021-02-28 15:00:00+01:00,15°,8°,4mm
+Strasbourg,1,['L. Ajorque'],Lille,1,['J. Fonte'],Lille,2021/02/28,27,nord-pas-de-calais,2021-02-28 17:05:00+01:00,11°,5°,0mm
+Lyon,1,['K. Toko'],Marseille,1,['A. Milik'],Marseille,2021/02/28,27,provence-alpes-c-te-d-azur,2021-02-28 21:00:00+01:00,14°,12°,4mm
+Rennes,0,[],Lyon,1,['H. Aouar'],Lyon,2021/03/03,28,rh-ne-alpes,2021-03-03 19:00:00+01:00,17°,7°,0mm
+Angers,1,['A. Fulgini'],Metz,0,[],Metz,2021/03/03,28,lorraine,2021-03-03 19:00:00+01:00,14°,4°,0mm
+Lens,3,"['F. Sotoca', 'A. Kalimuendo', '+3 D.']",Saint-Étienne,2,"['H. Moukoudi', 'D. Bouanga']",Saint-Étienne,2021/03/03,28,rh-ne-alpes,2021-03-03 19:00:00+01:00,16°,2°,0mm
+Nîmes,1,['L. Landre'],Nice,2,"['A. Gouiri', 'A. Claude-Maurice']",Nice,2021/03/03,28,provence-alpes-c-te-d-azur,2021-03-03 19:00:00+01:00,13°,11°,0mm
+Dijon,1,['R. Assalé'],Brest,3,"['F. Honorat', 'S. Mounié', 'I. Cardona']",Brest,2021/03/03,28,bretagne,2021-03-03 19:00:00+01:00,12°,9°,5mm
+Marseille,0,[],Lille,2,"['J. David', 'J. David']",Lille,2021/03/03,28,nord-pas-de-calais,2021-03-03 21:00:00+01:00,15°,7°,1mm
+Paris-SG,1,['P. Sarabia'],Bordeaux,0,[],Bordeaux,2021/03/03,28,aquitaine,2021-03-03 21:00:00+01:00,19°,9°,0mm
+Monaco,0,[],Strasbourg,1,['F. Guilbert'],Strasbourg,2021/03/03,28,alsace,2021-03-03 21:00:00+01:00,15°,5°,0mm
+Lorient,1,['A. Grbic'],Montpellier,1,['S. Mavididi'],Montpellier,2021/03/03,28,languedoc-roussillon,2021-03-03 21:00:00+01:00,13°,9°,0mm
+Reims,2,"['G. Konan', 'Y. Abdelhamid']",Nantes,1,['M. Simon'],Nantes,2021/03/03,28,pays-de-la-loire,2021-03-03 21:00:00+01:00,15°,8°,3mm
+Lyon,1,['+2 T.'],Reims,1,['M. Cafaro'],Reims,2021/03/12,29,champagne-ardenne,2021-03-12 21:00:00+01:00,10°,3°,3mm
+Saint-Étienne,1,['W. Khazri'],Angers,0,[],Angers,2021/03/13,29,pays-de-la-loire,2021-03-13 13:00:00+01:00,10°,9°,7mm
+Brest,1,['L. Brassier'],Marseille,3,"['A. Milik', 'F. Thauvin', 'M. Cuisance']",Marseille,2021/03/13,29,provence-alpes-c-te-d-azur,2021-03-13 17:00:00+01:00,13°,10°,0mm
+Montpellier,1,['A. Delort'],Nîmes,1,['M. Koné'],Nîmes,2021/03/14,29,languedoc-roussillon,2021-03-14 13:00:00+01:00,13°,8°,0mm
+Metz,2,"['V. Dias', 'T. Delaine']",Lens,2,"['J. Clauss', 'Y. Cahuzac']",Lens,2021/03/14,29,nord-pas-de-calais,2021-03-14 15:00:00+01:00,9°,4°,2mm
+Strasbourg,0,[],Rennes,1,['B. Bourigeaud'],Rennes,2021/03/14,29,bretagne,2021-03-14 15:00:00+01:00,10°,2°,1mm
+Nice,1,['M. Maolida'],Lorient,1,['Y. Wissa'],Lorient,2021/03/14,29,bretagne,2021-03-14 15:00:00+01:00,10°,5°,1mm
+Bordeaux,3,"['U. Hwang', 'U. Hwang', 'N. De']",Dijon,1,['M. Konaté'],Dijon,2021/03/14,29,bourgogne,2021-03-14 15:00:00+01:00,7°,2°,3mm
+Lille,0,[],Monaco,0,[],Monaco,2021/03/14,29,provence-alpes-c-te-d-azur,2021-03-14 17:05:00+01:00,14°,11°,1mm
+Nantes,2,"['R. Kolo', 'M. Simon']",Paris-SG,1,['J. Draxler'],Paris,2021/03/14,29,ile-de-france,2021-03-14 21:00:00+01:00,10°,5°,2mm
+Monaco,4,"['S. Jovetic', 'A. Tchouaméni', 'S. Diop', 'K. Diatta']",Saint-Étienne,0,[],Saint-Étienne,2021/03/19,30,rh-ne-alpes,2021-03-19 21:00:00+01:00,6°,-3°,1mm
+Rennes,3,"['J. Doku', 'M. Terrier', 'S. Guirassy']",Metz,1,['P. Yade'],Metz,2021/03/20,30,lorraine,2021-03-20 13:00:00+01:00,5°,-2°,0mm
+Marseille,0,[],Nice,3,"['K. Thuram', 'A. Gouiri', 'A. Claude-Maurice']",Nice,2021/03/20,30,provence-alpes-c-te-d-azur,2021-03-20 17:00:00+01:00,11°,7°,0mm
+Lens,2,"['M. Haïdara', 'S. Fofana']",Strasbourg,1,['J. Bellegarde'],Strasbourg,2021/03/21,30,alsace,2021-03-21 13:00:00+01:00,7°,0°,1mm
+Bordeaux,1,['U. Hwang'],Montpellier,3,"['J. Sambia', 'G. Laborde', 'S. Mavididi']",Montpellier,2021/03/21,30,languedoc-roussillon,2021-03-21 15:00:00+01:00,12°,4°,0mm
+Angers,0,[],Brest,0,[],Brest,2021/03/21,30,bretagne,2021-03-21 15:00:00+01:00,10°,8°,1mm
+Reims,1,['B. Dia'],Dijon,0,[],Dijon,2021/03/21,30,bourgogne,2021-03-21 15:00:00+01:00,9°,-2°,0mm
+Lorient,1,['A. Laurienté'],Nantes,1,['R. Kolo'],Nantes,2021/03/21,30,pays-de-la-loire,2021-03-21 15:00:00+01:00,11°,2°,1mm
+Nîmes,2,"['M. Koné', 'R. Ripart']",Lille,1,['Xeka 20’'],Lille,2021/03/21,30,nord-pas-de-calais,2021-03-21 17:05:00+01:00,10°,7°,1mm
+Paris-SG,4,"['K. Mbappé', 'D. Pereira', 'A. Di', 'K. Mbappé']",Lyon,2,"['I. Slimani', 'M. Cornet']",Lyon,2021/03/21,30,rh-ne-alpes,2021-03-21 21:00:00+01:00,9°,-1°,0mm
+Metz,0,[],Monaco,4,"['F. Fabregas', 'K. Volland', 'W. Ben', 'W. Ben']",Monaco,2021/04/03,31,provence-alpes-c-te-d-azur,2021-04-03 13:00:00+02:00,15°,13°,7mm
+Lille,1,['J. David'],Paris-SG,0,[],Paris,2021/04/03,31,ile-de-france,2021-04-03 17:00:00+02:00,13°,4°,0mm
+Lyon,1,['L. Paqueta'],Lens,1,['J. Clauss'],Lens,2021/04/03,31,nord-pas-de-calais,2021-04-03 21:00:00+02:00,11°,4°,0mm
+Montpellier,1,['S. Mavididi'],Angers,1,['S. Bahoken'],Angers,2021/04/04,31,pays-de-la-loire,2021-04-04 13:00:00+02:00,14°,2°,0mm
+Rennes,2,"['S. Guirassy', 'S. Guirassy']",Reims,2,"['B. Dia', 'G. Konan']",Reims,2021/04/04,31,champagne-ardenne,2021-04-04 15:00:00+02:00,12°,1°,0mm
+Nice,2,"['K. Dolberg', 'K. Dolberg']",Nantes,1,['A. Touré'],Nantes,2021/04/04,31,pays-de-la-loire,2021-04-04 15:00:00+02:00,14°,1°,0mm
+Strasbourg,3,"['L. Koné', 'H. Diallo', 'L. Ajorque']",Bordeaux,2,"['P. Baysse', 'U. Hwang']",Bordeaux,2021/04/04,31,aquitaine,2021-04-04 15:00:00+02:00,17°,6°,0mm
+Brest,0,[],Lorient,1,['L. Abergel'],Lorient,2021/04/04,31,bretagne,2021-04-04 15:00:00+02:00,14°,2°,0mm
+Saint-Étienne,2,"['W. Khazri', 'D. Bouanga']",Nîmes,0,[],Nîmes,2021/04/04,31,languedoc-roussillon,2021-04-04 17:05:00+02:00,13°,9°,0mm
+Dijon,0,[],Marseille,2,"['L. Balerdi', 'A. Gonzalez']",Marseille,2021/04/04,31,provence-alpes-c-te-d-azur,2021-04-04 21:00:00+02:00,15°,14°,1mm
+Lille,2,"['B. Yilmaz', 'M. Çelik']",Metz,0,[],Metz,2021/04/09,32,lorraine,2021-04-09 21:00:00+02:00,13°,2°,1mm
+Paris-SG,4,"['K. Mbappé', 'P. Sarabia', 'M. Kean', 'L. Paredes']",Strasbourg,1,['M. Sahi'],Strasbourg,2021/04/10,32,alsace,2021-04-10 17:00:00+02:00,17°,9°,3mm
+Marseille,3,"['A. Milik', '+2 P.', 'L. Perrin']",Montpellier,3,"['A. Delort', 'G. Laborde', 'G. Laborde']",Montpellier,2021/04/10,32,languedoc-roussillon,2021-04-10 21:00:00+02:00,11°,9°,16mm
+Nantes,0,[],Rennes,1,['M. Terrier'],Rennes,2021/04/11,32,bretagne,2021-04-11 13:00:00+02:00,7°,4°,3mm
+Lorient,1,['T. Moffi'],Lens,4,"['G. Kakuta', 'C. Jean', 'A. Kalimuendo', 'S. Banza']",Lens,2021/04/11,32,nord-pas-de-calais,2021-04-11 15:00:00+02:00,3°,1°,16mm
+Reims,0,[],Nice,0,[],Nice,2021/04/11,32,provence-alpes-c-te-d-azur,2021-04-11 15:00:00+02:00,11°,10°,30mm
+Bordeaux,1,['U. Hwang'],Saint-Étienne,4,"['W. Khazri', 'W. Khazri', 'W. Khazri', 'Z. Youssouf']",Saint-Étienne,2021/04/11,32,rh-ne-alpes,2021-04-11 15:00:00+02:00,14°,9°,14mm
+Nîmes,1,['M. Koné'],Brest,1,['B. Chardonnet'],Brest,2021/04/11,32,bretagne,2021-04-11 15:00:00+02:00,7°,5°,1mm
+Dijon,0,[],Monaco,3,"['S. Jovetic', 'W. Ben', 'W. Ben']",Monaco,2021/04/11,32,provence-alpes-c-te-d-azur,2021-04-11 17:05:00+02:00,12°,11°,29mm
+Angers,0,[],Lyon,3,"['M. Depay', 'L. Paqueta', 'M. Depay']",Lyon,2021/04/11,32,rh-ne-alpes,2021-04-11 21:00:00+02:00,15°,11°,14mm
+Montpellier,1,['A. Delort'],Lille,1,['L. Araujo'],Lille,2021/04/16,33,nord-pas-de-calais,2021-04-16 21:00:00+02:00,11°,2°,0mm
+Rennes,3,"['+1 J.', 'M. Terrier', '+1 S.']",Angers,0,[],Angers,2021/04/17,33,pays-de-la-loire,2021-04-17 12:45:00+02:00,12°,1°,1mm
+Lorient,2,"['T. Moffi', 'T. Moffi']",Marseille,3,"['D. Payet', 'P. Lirola', 'P. Lirola']",Marseille,2021/04/17,33,provence-alpes-c-te-d-azur,2021-04-17 17:00:00+02:00,13°,9°,0mm
+Saint-Étienne,2,"['D. Bouanga', '+2 R.']",Paris-SG,3,"['K. Mbappé', 'K. Mbappé', 'M. Icardi']",Paris,2021/04/18,33,ile-de-france,2021-04-18 13:00:00+02:00,12°,5°,0mm
+Lens,1,['G. Kakuta'],Brest,1,['Y. Cahuzac'],Brest,2021/04/18,33,bretagne,2021-04-18 15:00:00+02:00,12°,4°,0mm
+Nice,0,[],Dijon,2,"['F. Chafik', 'Y. Benzia']",Dijon,2021/04/18,33,bourgogne,2021-04-18 15:00:00+02:00,11°,4°,2mm
+Metz,0,[],Reims,0,[],Reims,2021/04/18,33,champagne-ardenne,2021-04-18 15:00:00+02:00,11°,5°,1mm
+Strasbourg,1,['D. Liénard'],Nîmes,1,['R. Ripart'],Nîmes,2021/04/18,33,languedoc-roussillon,2021-04-18 15:00:00+02:00,16°,7°,0mm
+Monaco,3,"['K. Volland', 'G. Martins', 'S. Jovetic']",Bordeaux,0,[],Bordeaux,2021/04/18,33,aquitaine,2021-04-18 17:05:00+02:00,16°,8°,0mm
+Lyon,2,"['M. Depay', 'M. Depay']",Nantes,1,['N. Pallois'],Nantes,2021/04/18,33,pays-de-la-loire,2021-04-18 21:00:00+02:00,14°,3°,0mm
+Marseille,3,"['D. Payet', '+2 A.', 'D. Payet']",Reims,1,['N. Mbuku'],Reims,2021/04/23,34,champagne-ardenne,2021-04-23 21:00:00+02:00,15°,3°,0mm
+Brest,2,"['G. Charbonnier', 'G. Charbonnier']",Saint-Étienne,1,['W. Khazri'],Saint-Étienne,2021/04/24,34,rh-ne-alpes,2021-04-24 13:00:00+02:00,20°,7°,0mm
+Paris-SG,3,"['K. Mbappé', 'K. Mbappé', 'M. Icardi']",Metz,1,['F. Centonze'],Metz,2021/04/24,34,lorraine,2021-04-24 17:00:00+02:00,16°,4°,0mm
+Montpellier,1,['G. Laborde'],Nice,3,"['H. Boudaoui', 'J. Todibo', 'A. Claude-Maurice']",Nice,2021/04/25,34,provence-alpes-c-te-d-azur,2021-04-25 13:00:00+02:00,17°,15°,0mm
+Nîmes,1,['Z. Ferhat'],Lens,2,"['I. Ganago', 'M. Haïdara']",Lens,2021/04/25,34,nord-pas-de-calais,2021-04-25 15:00:00+02:00,13°,4°,0mm
+Dijon,1,['Y. Benzia'],Rennes,5,"['M. Terrier', 'M. Terrier', 'F. Tait', 'G. Nyamsi', 'C. Grenier']",Rennes,2021/04/25,34,bretagne,2021-04-25 15:00:00+02:00,17°,7°,0mm
+Nantes,2,"['J. Castelletto', 'L. Blas']",Strasbourg,1,['L. Ajorque'],Strasbourg,2021/04/25,34,alsace,2021-04-25 15:00:00+02:00,17°,7°,0mm
+Bordeaux,1,['I. Sissokho'],Lorient,4,"['Y. Wissa', 'T. Moffi', 'T. Moffi', 'T. Moffi']",Lorient,2021/04/25,34,bretagne,2021-04-25 15:00:00+02:00,18°,9°,0mm
+Monaco,1,['W. Ben'],Angers,0,[],Angers,2021/04/25,34,pays-de-la-loire,2021-04-25 17:05:00+02:00,18°,8°,0mm
+Lille,3,"['+1 B.', 'J. David', 'B. Yilmaz']",Lyon,2,"['I. Slimani', 'J. Fonte']",Lyon,2021/04/25,34,rh-ne-alpes,2021-04-25 21:00:00+02:00,22°,11°,0mm
+Strasbourg,1,['S. Mitrovic'],Marseille,1,['D. Benedetto'],Marseille,2021/04/30,35,provence-alpes-c-te-d-azur,2021-04-30 21:00:00+02:00,17°,15°,4mm
+Lens,1,['I. Ganago'],Paris-SG,2,"['Neymar 33’', 'Marquinhos 59’']",Paris,2021/05/01,35,ile-de-france,2021-05-01 17:00:00+02:00,15°,7°,0mm
+Nice,0,[],Lille,2,"['B. Yilmaz', 'M. Çelik']",Lille,2021/05/01,35,nord-pas-de-calais,2021-05-01 21:00:00+02:00,13°,5°,0mm
+Rennes,0,[],Bordeaux,1,['S. Mara'],Bordeaux,2021/05/02,35,aquitaine,2021-05-02 13:00:00+02:00,17°,8°,1mm
+Metz,5,"['M. Gueye', 'P. Sarr', 'F. Chafik', 'V. Dias', 'D. Bronn']",Dijon,1,['M. Baldé'],Dijon,2021/05/02,35,bourgogne,2021-05-02 15:00:00+02:00,11°,6°,5mm
+Reims,2,"['N. Mbuku', 'A. Flips']",Nîmes,2,"['R. Ripart', 'M. Koné']",Nîmes,2021/05/02,35,languedoc-roussillon,2021-05-02 15:00:00+02:00,18°,9°,1mm
+Angers,0,[],Lorient,2,"['Y. Wissa', 'F. Lemoine']",Lorient,2021/05/02,35,bretagne,2021-05-02 15:00:00+02:00,13°,4°,2mm
+Nantes,4,"['M. Simon', 'L. Blas', 'I. Louza', 'K. Coulibaly']",Brest,1,['R. Faivre'],Brest,2021/05/02,35,bretagne,2021-05-02 15:00:00+02:00,12°,6°,1mm
+Saint-Étienne,2,"['R. Hamouma', 'M. Debuchy']",Montpellier,1,['A. Delort'],Montpellier,2021/05/02,35,languedoc-roussillon,2021-05-02 17:05:00+02:00,18°,10°,1mm
+Lyon,3,"['M. Depay', 'Marcelo', 'R. Cherki']",Monaco,2,"['K. Volland', 'W. Ben']",Monaco,2021/05/02,35,provence-alpes-c-te-d-azur,2021-05-02 21:00:00+02:00,17°,13°,5mm
+Lille,3,"['B. Yilmaz', 'B. Yilmaz', 'J. David']",Lens,0,[],Lens,2021/05/07,36,nord-pas-de-calais,2021-05-07 21:00:00+02:00,13°,5°,1mm
+Bordeaux,0,[],Nantes,3,"['K. Coulibaly', 'I. Louza', 'R. Kolo']",Nantes,2021/05/08,36,pays-de-la-loire,2021-05-08 13:00:00+02:00,20°,13°,1mm
+Lorient,1,['T. Monconduit'],Lyon,4,"['H. Aouar', 'L. Paqueta', 'B. Guimaraes', 'B. Guimaraes']",Lyon,2021/05/08,36,rh-ne-alpes,2021-05-08 17:00:00+02:00,21°,9°,0mm
+Marseille,0,[],Saint-Étienne,1,['A. Nordin'],Saint-Étienne,2021/05/09,36,rh-ne-alpes,2021-05-09 13:00:00+02:00,21°,13°,1mm
+Montpellier,3,"['G. Laborde', 'A. Delort', 'G. Laborde']",Strasbourg,2,"['L. Ajorque', 'K. Zohi']",Strasbourg,2021/05/09,36,alsace,2021-05-09 15:00:00+02:00,24°,12°,0mm
+Nîmes,3,"['L. Fomba', 'R. Ripart', 'Z. Ferhat']",Metz,0,[],Metz,2021/05/09,36,lorraine,2021-05-09 15:00:00+02:00,21°,12°,1mm
+Brest,2,"['S. Mounié', 'S. Mounié']",Nice,3,"['R. Lopes', 'H. Boudaoui', 'H. Kamara']",Nice,2021/05/09,36,provence-alpes-c-te-d-azur,2021-05-09 15:00:00+02:00,18°,15°,0mm
+Dijon,0,[],Angers,3,"['A. Fulgini', 'F. El-Melali', 'L. Diony']",Angers,2021/05/09,36,pays-de-la-loire,2021-05-09 15:00:00+02:00,20°,15°,3mm
+Monaco,1,['E. Matazo'],Reims,0,[],Reims,2021/05/09,36,champagne-ardenne,2021-05-09 17:05:00+02:00,22°,13°,2mm
+Paris-SG,1,['+6 Neymar'],Rennes,1,['S. Guirassy'],Rennes,2021/05/09,36,bretagne,2021-05-09 21:00:00+02:00,18°,11°,0mm
+Saint-Étienne,0,[],Lille,0,[],Lille,2021/05/16,37,nord-pas-de-calais,2021-05-16 21:00:00+02:00,14°,8°,6mm
+Reims,0,[],Paris-SG,4,"['Neymar 13’', 'K. Mbappé', 'Marquinhos 68’', 'M. Kean']",Paris,2021/05/16,37,ile-de-france,2021-05-16 21:00:00+02:00,16°,10°,3mm
+Rennes,1,['A. Disasi'],Monaco,2,"['W. Ben', 'A. Golovine']",Monaco,2021/05/16,37,provence-alpes-c-te-d-azur,2021-05-16 21:00:00+02:00,17°,15°,0mm
+Lyon,5,"['L. Paqueta', 'M. Depay', 'L. Paqueta', 'H. Aouar', 'I. Slimani']",Nîmes,2,"['M. Koné', 'M. Koné']",Nîmes,2021/05/16,37,languedoc-roussillon,2021-05-16 21:00:00+02:00,20°,13°,1mm
+Angers,2,"['M. Pereira', 'R. Thomas']",Marseille,3,"['A. Milik', 'A. Milik', 'A. Milik']",Marseille,2021/05/16,37,provence-alpes-c-te-d-azur,2021-05-16 21:00:00+02:00,17°,14°,1mm
+Lens,0,[],Bordeaux,3,"['U. Hwang', 'Y. Sabaly', 'M. Zerkane']",Bordeaux,2021/05/16,37,aquitaine,2021-05-16 21:00:00+02:00,15°,13°,8mm
+Brest,0,[],Montpellier,0,[],Montpellier,2021/05/16,37,languedoc-roussillon,2021-05-16 21:00:00+02:00,19°,14°,3mm
+Strasbourg,2,"['L. Ajorque', 'L. Ajorque']",Nice,0,[],Nice,2021/05/16,37,provence-alpes-c-te-d-azur,2021-05-16 21:00:00+02:00,18°,15°,0mm
+Metz,1,['B. Traoré'],Lorient,2,"['Y. Wissa', 'J. Hergault']",Lorient,2021/05/16,37,bretagne,2021-05-16 21:00:00+02:00,13°,11°,7mm
+Nantes,4,"['K. Coulibaly', 'R. Kolo', '+1 L.', '+3 R.']",Dijon,0,[],Dijon,2021/05/16,37,bourgogne,2021-05-16 21:00:00+02:00,14°,9°,7mm
+Lille,2,"['J. David', '+1 B.']",Angers,1,['A. Fulgini'],Angers,2021/05/23,38,pays-de-la-loire,2021-05-23 21:00:00+02:00,16°,7°,1mm
+Paris-SG,2,"['R. Faivre', 'K. Mbappé']",Brest,0,[],Brest,2021/05/23,38,bretagne,2021-05-23 21:00:00+02:00,12°,9°,11mm
+Monaco,0,[],Lens,0,[],Lens,2021/05/23,38,nord-pas-de-calais,2021-05-23 21:00:00+02:00,14°,7°,2mm
+Nice,3,"['K. Dolberg', 'H. Kamara', 'W. Saliba']",Lyon,2,"['K. Toko', 'K. Toko']",Lyon,2021/05/23,38,rh-ne-alpes,2021-05-23 21:00:00+02:00,19°,10°,1mm
+Marseille,1,['+13 A.'],Metz,1,['F. Boulaya'],Metz,2021/05/23,38,lorraine,2021-05-23 21:00:00+02:00,14°,7°,1mm
+Nîmes,0,[],Rennes,2,"['S. Guirassy', 'B. Bourigeaud']",Rennes,2021/05/23,38,bretagne,2021-05-23 21:00:00+02:00,15°,5°,2mm
+Montpellier,2,"['G. Laborde', 'A. Delort']",Nantes,1,['R. Kolo'],Nantes,2021/05/23,38,pays-de-la-loire,2021-05-23 21:00:00+02:00,16°,8°,1mm
+Dijon,1,['A. Kamara'],Saint-Étienne,0,[],Saint-Étienne,2021/05/23,38,rh-ne-alpes,2021-05-23 21:00:00+02:00,17°,7°,0mm
+Bordeaux,2,"['Y. Adli', 'E. Kwateng']",Reims,1,['E. Touré'],Reims,2021/05/23,38,champagne-ardenne,2021-05-23 21:00:00+02:00,14°,7°,1mm
+Lorient,1,['T. Chalobah'],Strasbourg,1,['H. Diallo'],Strasbourg,2021/05/23,38,alsace,2021-05-23 21:00:00+02:00,16°,8°,2mm
