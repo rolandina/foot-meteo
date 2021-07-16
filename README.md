@@ -29,7 +29,13 @@ conda activate house_predict
 
 ```
 # Clone this repository 
-git clone https://github.com/rolandina/house-price-prediction.git
+git clone https://github.com/rolandina/house-price-prediction-app.git
+```
+
+```
+# To run streamlit app on your laptop 
+cd project_with_weather_from_csv
+streamlit run app.py
 ```
 
 ## Contributing
