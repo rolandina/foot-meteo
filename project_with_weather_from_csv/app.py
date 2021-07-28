@@ -13,38 +13,49 @@ import streamlit as st
 #parameters
 plot_title_font_size = 20
 
-st.set_page_config(page_title="meteo-foot", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title="meteo-foot", layout='wide', initial_sidebar_state='auto')
 
-# 1. GET AND PREPARE DATA
-#Connexion to db with data
-conn = pg.connect(dbname='d18d5k6eqpagnc',
-                  user='qshqwgcxyldiib',
-                  host='ec2-54-74-14-109.eu-west-1.compute.amazonaws.com',
-                  password = '726d500b6531d0c8fb04410eb021d11ccccb5f369efa9cb7045538a1f56a8faa')
-cursor = conn.cursor()
+@st.cache(allow_output_mutation=True)
+def get_data():
+    # 1. GET AND PREPARE DATA
+    #Connexion to db with data
+    conn = pg.connect(dbname='d18d5k6eqpagnc',
+                    user='qshqwgcxyldiib',
+                    host='ec2-54-74-14-109.eu-west-1.compute.amazonaws.com',
+                    password = '726d500b6531d0c8fb04410eb021d11ccccb5f369efa9cb7045538a1f56a8faa')
+    cursor = conn.cursor()
 
+    #create DF wuth matches data
+    data = pd.read_sql(f"""
+    SELECT t.city, mt.team_goal, m.temperature, m.rainfall
+    FROM matches_teams AS mt
+    JOIN matches as m
+    ON m.id = mt.match_id
+    JOIN teams as t
+    ON mt.team_id = t.id
+    ;""", conn)
 
-#create DF wuth matches data
-data = pd.read_sql(f"""
-SELECT t.city, mt.team_goal, m.temperature, m.rainfall
-FROM matches_teams AS mt
-JOIN matches as m
-ON m.id = mt.match_id
-JOIN teams as t
-ON mt.team_id = t.id
-;""", conn)
+    #create DF with goals per player data
+    data2 = pd.read_sql(f"""
+    SELECT g.match_id, p.last_name, t.city, m.temperature, m.rainfall
+    FROM goals AS g
+    JOIN players as p
+    ON p.id = g.player_id
+    JOIN matches as m
+    ON g.match_id = m.id
+    join teams as t
+    ON p.team_id = t.id
+    ;""", conn)
 
-#create DF with goals per player data
-data2 = pd.read_sql(f"""
-SELECT g.match_id, p.last_name, t.city, m.temperature, m.rainfall
-FROM goals AS g
-JOIN players as p
-ON p.id = g.player_id
-JOIN matches as m
-ON g.match_id = m.id
-join teams as t
-ON p.team_id = t.id
-;""", conn)
+    #create match_meteo
+    match_meteo = pd.read_sql_query(f"""
+    SELECT *
+    FROM matches
+    ;""", conn)
+
+    return data, data2, match_meteo
+
+data, data2, match_meteo = get_data()
 
 ## Michael VIZ
 data2['buts'] = 1
@@ -94,12 +105,26 @@ def player_bar_meteo(player):
     return fig
 
 # title
-st.markdown("<h1 style='text-align: center; color: red;'> Some title </h1>",  unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center;'> Description de project </h3>",  unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: red;'> Etude du nombre de buts en fonction de la météo </h1>",  unsafe_allow_html=True)
+st.markdown("---")
+st.markdown("""
+<h3 style='text-align: center;'>
+
+<strong>Objectif et mise en situation: </strong> Jean-Michel à une idée lumineuse: Il est persuadé que lorsqu’il fait beau les matchs de foot sont plus intéressants que lorsque le temps est mauvais. Il souhaite vendre des espaces publicitaires dans le stades à des sponsors et faire varier le prix en fonction de la météo. Mais pour cela il a besoin d’illustrer son propos. C’est pour cela qu’il vient à vous. Il souhaite avoir au minimum deux représentations visuelles:
+
+<ul>
+    <li>l’évolution du nombre de buts d’une équipe en fonction de la météo (pluviométrie, température)</li>
+    <li>l’évolution du nombre de buts d’un joueur en fonction de la météo (pluviométrie, température)</li>
+</ul>
+
+Il est ouvert à toutes propositions permettant d’illustrer au mieux la relation entre météo et le dynamisme d’un match.
+
+</h3>
+""",  unsafe_allow_html=True)
 
 # plot 1
-
-st.markdown(f"<h2 style='text-align: center;'> <b> Distributions des buts par equipe </b> </h2>", unsafe_allow_html=True)
+st.markdown("---")
+st.markdown(f"<h2 style='text-align: center;'> <b> Distributions du nombre de buts par equipe </b> </h2>", unsafe_allow_html=True)
 empty, col1 = st.beta_columns([3,1])
 with col1:
     selected_team = st.selectbox("Choose a team:", tuple(data['city'].unique()))
@@ -108,7 +133,8 @@ st.pyplot(team_bar_meteo(selected_team))
 
 
 # plot 2
-st.markdown(f"<h2 style='text-align: center;'> <b> Distributions des buts par joueur </b> </h2>", unsafe_allow_html=True)
+st.markdown("---")
+st.markdown(f"<h2 style='text-align: center;'> <b> Distributions du nombre de buts par joueur </b> </h2>", unsafe_allow_html=True)
 empty, col1 = st.beta_columns([3,1])
 with col1:
     selected_player = st.selectbox("Choose a player:", tuple(data2['last_name'].unique()))
@@ -147,8 +173,11 @@ empty, col1 = st.beta_columns([3,1])
 with col1:
     selected_player2 = st.selectbox("Choose a player:", tuple(players_list))
 
-
-st.markdown(f"<h3 style='text-align: center;'>Distributions des buts de {selected_player2} </h3>", unsafe_allow_html=True)
+st.markdown("---")
+st.markdown(f"""
+<h3 style='text-align: center;'>Distributions des buts de {selected_player2} </h3>
+<br>
+""", unsafe_allow_html=True)
 empty1, col, empty2 = st.beta_columns([1,2,1])
 with col:
     st.pyplot(plot_player_goals_meteo(selected_player2))
@@ -178,16 +207,15 @@ def plot_total_goals_number_by_meteo(player_meteo):
     return fig
 
 # plot 4
-st.markdown(f"<h2 style='text-align: center;'> <b> Distributions du nombre de buts totals en function de la météo </b> </h2>", unsafe_allow_html=True)
+st.markdown("---")
+st.markdown(f"""
+<h2 style='text-align: center;'> <b> Distributions du nombre de buts total en fonction de la météo </b> </h2>
+ 
+ """, unsafe_allow_html=True)
 st.pyplot(plot_total_goals_number_by_meteo(player_meteo))
 
 
 #assuption is_rain = true si le plue > 1mm et faux si non
-match_meteo = pd.read_sql_query(f"""
-    SELECT *
-    FROM matches
-    ;""", conn)
-
 match_meteo["is_rain"] = [True if mm>1 else False for mm in match_meteo['rainfall']]
 
 
@@ -207,10 +235,10 @@ def plot_total_goals_number_by_meteo(player_meteo):
                 multiple="stack",
                 alpha=0.9,
                 ax=ax[1])
-    ax[0].set_title(f"Total nombre de buts par témpérature",
+    ax[0].set_title(f"Total du nombre de buts par température",
                     fontsize=plot_title_font_size,
                     fontweight='bold')
-    ax[1].set_title(f"Total nombre de match par témpérature",
+    ax[1].set_title(f"Total du nombre de match par température",
                     fontsize=plot_title_font_size,
                     fontweight='bold')
     return fig
@@ -290,7 +318,8 @@ def plot_mean_goals_per_match_per_temperature(df_rain, df_no_rain, feature = 'te
     #plt.suptitle(f'Distribution du nombre de buts moyen par match en fonction de la {feature}  ', fontsize = 30, fontweight = 'bold')
     return fig
 
-# plot 6 
+# plot 6
+st.markdown("---")
 st.markdown(f"<h2 style='text-align: center;'> <b> Distribution du nombre de buts moyen par match en fonction de la temperature </b> </h2>", unsafe_allow_html=True)
 st.pyplot(plot_mean_goals_per_match_per_temperature(df_rain, df_no_rain))
 
@@ -312,5 +341,16 @@ df_no_rain2 = regroup_by_temperature(no_rain2, "cut_temperature")
 df_rain2 = regroup_by_temperature(rain2, "cut_temperature")
 
 # plot 7
+st.markdown("---")
 st.markdown(f"<h2 style='text-align: center;'> <b> Distribution du nombre de buts moyen par match en fonction de la temperature bins </b> </h2>", unsafe_allow_html=True)
 st.pyplot(plot_mean_goals_per_match_per_temperature(df_rain2, df_no_rain2, 'cut_temperature'))
+
+st.markdown("---")
+conclusion = st.button('Conclusion')
+if conclusion:
+
+    st.markdown("""
+    <h2>Conclusion</h2>
+    <p>Avec tout le respect que l'on vous doit, cher Jean Michel, il semblerait qu'il n'y ait pas, voir très peu de corrélation entre le nombre de buts marqués par joueur ou par équipe et la météo en ligue 1.</p>
+    """, unsafe_allow_html=True)
+    st.balloons()
