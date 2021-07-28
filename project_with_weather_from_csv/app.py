@@ -15,7 +15,7 @@ plot_title_font_size = 20
 
 st.set_page_config(page_title="meteo-foot", layout='wide', initial_sidebar_state='auto')
 
-@st.cache(allow_output_mutation=True)
+@st.cache()
 def get_data():
     # 1. GET AND PREPARE DATA
     #Connexion to db with data
@@ -24,6 +24,7 @@ def get_data():
                     host='ec2-54-74-14-109.eu-west-1.compute.amazonaws.com',
                     password = '726d500b6531d0c8fb04410eb021d11ccccb5f369efa9cb7045538a1f56a8faa')
     cursor = conn.cursor()
+
 
     #create DF wuth matches data
     data = pd.read_sql(f"""
@@ -47,33 +48,62 @@ def get_data():
     ON p.team_id = t.id
     ;""", conn)
 
-    #create match_meteo
     match_meteo = pd.read_sql_query(f"""
     SELECT *
     FROM matches
     ;""", conn)
 
-    return data, data2, match_meteo
+    match_meteo["is_rain"] = [True if mm>1 else False for mm in match_meteo['rainfall']]
 
-data, data2, match_meteo = get_data()
 
-## Michael VIZ
-data2['buts'] = 1
-df_total_but = data2[['city','temperature','rainfall', 'buts']].groupby(data2['match_id']).sum()
-df_score_player_match = pd.DataFrame()
+    ## Michael VIZ
+    data2['buts'] = 1
+    df_total_but = data2[['city','temperature','rainfall', 'buts']].groupby(data2['match_id']).sum()
+    df_score_player_match = pd.DataFrame()
 
-for i in range(data2['match_id'].min(), data2['match_id'].max()+1):
+    for i in range(data2['match_id'].min(), data2['match_id'].max()+1):
+        
+        new_df = pd.DataFrame(data2['buts'][data2['match_id'] == i].groupby(
+            data2['last_name']).sum()).reset_index().assign(
+            temperature=data2['temperature'][data2['match_id'] == i].mean()).assign(
+            rainfall=data2['rainfall'][data2['match_id'] == i].mean()).assign(
+            match_id=i)
+        
+        df_score_player_match = df_score_player_match.append(new_df, ignore_index=True)
+
+    df_score_player_match['buts'].groupby(df_score_player_match['last_name']).sum().sort_values(ascending = False)
     
-    new_df = pd.DataFrame(data2['buts'][data2['match_id'] == i].groupby(
-        data2['last_name']).sum()).reset_index().assign(
-        temperature=data2['temperature'][data2['match_id'] == i].mean()).assign(
-        rainfall=data2['rainfall'][data2['match_id'] == i].mean()).assign(
-        match_id=i)
-    
-    df_score_player_match = df_score_player_match.append(new_df, ignore_index=True)
+    # prepare data Nina
 
 
-df_score_player_match['buts'].groupby(df_score_player_match['last_name']).sum().sort_values(ascending = False)
+    player_meteo = data2.copy()
+    player_meteo = player_meteo.rename(columns = {"match_id": "id"})
+    player_meteo = player_meteo.drop(['buts'], axis = 1)
+    player_meteo["player-club"] = player_meteo.last_name + ': ' + player_meteo.city
+    player_meteo["is_rain"] = [True if mm>1 else False for mm in player_meteo['rainfall']]
+
+    df1 = player_meteo[['temperature', 'is_rain', 'id', 'last_name']].groupby(by = ['temperature', 'is_rain', 'id'], as_index= False).count()
+    df1 = df1.rename(columns = {"last_name": "number_goals_per_match"})
+
+    no_rain = df1[df1.is_rain == False]
+    rain = df1[df1.is_rain == True]
+    temperature_bins = [-5., 5., 10., 15., 20., 30.]
+    temperature_labels = [0., 7.5, 12.5, 17.5, 25.]
+    no_rain2 = no_rain.copy()
+    rain2 = rain.copy()
+    no_rain2['cut_temperature'] = pd.cut(no_rain2['temperature'],
+                                        bins=temperature_bins,
+                                        labels=temperature_labels)
+    rain2['cut_temperature'] = pd.cut(rain2['temperature'],
+                                    bins=temperature_bins,
+                                    labels=temperature_labels)
+
+    return data, data2,  df_score_player_match, player_meteo, match_meteo, rain, no_rain, rain2, no_rain2 
+
+
+data, data2, df_score_player_match, player_meteo, match_meteo, rain, no_rain, rain2, no_rain2  = get_data()
+
+
 
 # VIZ function 
 def team_bar_meteo(team):
@@ -122,36 +152,25 @@ Il est ouvert à toutes propositions permettant d’illustrer au mieux la relati
 </h3>
 """,  unsafe_allow_html=True)
 
-# plot 1
-st.markdown("---")
-st.markdown(f"<h2 style='text-align: center;'> <b> Distributions du nombre de buts par equipe </b> </h2>", unsafe_allow_html=True)
-empty, col1 = st.beta_columns([3,1])
-with col1:
-    selected_team = st.selectbox("Choose a team:", tuple(data['city'].unique()))
-st.markdown(f"<h3 style='text-align: center;'>Distributions des buts de {selected_team} </h3>", unsafe_allow_html=True)
-st.pyplot(team_bar_meteo(selected_team))
+page = st.sidebar.radio("Outline:", ("Distributions du nombre de buts par equipe", 
+"Distributions du nombre de buts par joueur",
+  "Distributions du nombre de buts total en fonction de la météo",
+   "Distribution du nombre de buts moyen par match en fonction de la temperature",
+     "Conclusion"))
 
+if page == "Distributions du nombre de buts par equipe":
 
-# plot 2
-st.markdown("---")
-st.markdown(f"<h2 style='text-align: center;'> <b> Distributions du nombre de buts par joueur </b> </h2>", unsafe_allow_html=True)
-empty, col1 = st.beta_columns([3,1])
-with col1:
-    selected_player = st.selectbox("Choose a player:", tuple(data2['last_name'].unique()))
-st.markdown(f"<h3 style='text-align: center;'>Distributions des buts de {selected_player} </h3>", unsafe_allow_html=True)
-st.pyplot(player_bar_meteo(selected_player))
-
+    # plot 1
+    st.markdown("---")
+    st.markdown(f"<h2 style='text-align: center;'> <b> Distributions du nombre de buts par equipe </b> </h2>", unsafe_allow_html=True)
+    empty, col1 = st.beta_columns([3,1])
+    with col1:
+        selected_team = st.selectbox("Choose a team:", tuple(data['city'].unique()))
+    st.markdown(f"<h3 style='text-align: center;'>Distributions des buts de {selected_team} </h3>", unsafe_allow_html=True)
+    st.pyplot(team_bar_meteo(selected_team))
 
 
 # Nina VIZ
-# prepare data
-
-player_meteo = data2.copy()
-player_meteo = player_meteo.rename(columns = {"match_id": "id"})
-player_meteo = player_meteo.drop(['buts'], axis = 1)
-player_meteo["player-club"] = player_meteo.last_name + ': ' + player_meteo.city
-player_meteo["is_rain"] = [True if mm>1 else False for mm in player_meteo['rainfall']]
-
 
 def plot_player_goals_meteo(player):
     fig, ax = plt.subplots(1, 1, figsize=(10, 10))
@@ -167,20 +186,34 @@ number_goals_by_player = player_meteo[['player-club', 'temperature']].groupby(by
 number_goals_by_player = number_goals_by_player.sort_values(by= 'temperature', ascending = False)
 players_list = number_goals_by_player['player-club'].values
 
+if page == "Distributions du nombre de buts par joueur":
+# plot 2
+    st.markdown("---")
+    st.markdown(f"<h2 style='text-align: center;'> <b> Distributions du nombre de buts par joueur </b> </h2>", unsafe_allow_html=True)
+    empty, col1 = st.beta_columns([3,1])
+    with col1:
+        selected_player = st.selectbox("Choose a player:", tuple(data2['last_name'].unique()))
+    st.markdown(f"<h3 style='text-align: center;'>Distributions des buts de {selected_player} </h3>", unsafe_allow_html=True)
+    st.pyplot(player_bar_meteo(selected_player))
+
+
+
 # plot 3
 #value = players_list[0]
-empty, col1 = st.beta_columns([3,1])
-with col1:
-    selected_player2 = st.selectbox("Choose a player:", tuple(players_list))
 
-st.markdown("---")
-st.markdown(f"""
-<h3 style='text-align: center;'>Distributions des buts de {selected_player2} </h3>
-<br>
-""", unsafe_allow_html=True)
-empty1, col, empty2 = st.beta_columns([1,2,1])
-with col:
-    st.pyplot(plot_player_goals_meteo(selected_player2))
+
+    empty, col1 = st.beta_columns([3,1])
+    with col1:
+        selected_player2 = st.selectbox("Choose a player:", tuple(players_list))
+
+    st.markdown("---")
+    st.markdown(f"""
+    <h3 style='text-align: center;'>Distributions des buts de {selected_player2} </h3>
+    <br>
+    """, unsafe_allow_html=True)
+    empty1, col, empty2 = st.beta_columns([1,2,1])
+    with col:
+        st.pyplot(plot_player_goals_meteo(selected_player2))
 
 
 def plot_total_goals_number_by_meteo(player_meteo):
@@ -206,19 +239,6 @@ def plot_total_goals_number_by_meteo(player_meteo):
                     fontweight='bold')
     return fig
 
-# plot 4
-st.markdown("---")
-st.markdown(f"""
-<h2 style='text-align: center;'> <b> Distributions du nombre de buts total en fonction de la météo </b> </h2>
- 
- """, unsafe_allow_html=True)
-st.pyplot(plot_total_goals_number_by_meteo(player_meteo))
-
-
-#assuption is_rain = true si le plue > 1mm et faux si non
-match_meteo["is_rain"] = [True if mm>1 else False for mm in match_meteo['rainfall']]
-
-
 def plot_total_goals_number_by_meteo(player_meteo):
     fig, ax = plt.subplots(2, 1, figsize=(10, 16))
     sns.histplot(data=player_meteo,
@@ -243,20 +263,21 @@ def plot_total_goals_number_by_meteo(player_meteo):
                     fontweight='bold')
     return fig
 
-# plot 5
-empt1, col, empt2 = st.beta_columns([1,2,1])
-with col:   
-    st.pyplot(plot_total_goals_number_by_meteo(player_meteo))
 
+if page == "Distributions du nombre de buts total en fonction de la météo":
+# plot 4
+    st.markdown(f"""
+    <h2 style='text-align: center;'> <b> Distributions du nombre de buts total en fonction de la météo </b> </h2>
+    
+    """, unsafe_allow_html=True)
+    empt1, col, empt2 = st.beta_columns([1,2,1])
+    with col:   
+        st.pyplot(plot_total_goals_number_by_meteo(player_meteo))
 
+#assuption is_rain = true si le plue > 1mm et faux si non
 
 
 # Evolution du nombre de buts moyen par mathc en fonction de la temperature
-df1 = player_meteo[['temperature', 'is_rain', 'id', 'last_name']].groupby(by = ['temperature', 'is_rain', 'id'], as_index= False).count()
-df1 = df1.rename(columns = {"last_name": "number_goals_per_match"})
-
-no_rain = df1[df1.is_rain == False]
-rain = df1[df1.is_rain == True]
 
 def regroup_by_temperature(df0, g='temperature'):
     """This function return data frame groupped by temperature
@@ -272,6 +293,9 @@ def regroup_by_temperature(df0, g='temperature'):
 
 df_rain = regroup_by_temperature(rain)
 df_no_rain = regroup_by_temperature(no_rain)
+
+df_no_rain2 = regroup_by_temperature(no_rain2, "cut_temperature")
+df_rain2 = regroup_by_temperature(rain2, "cut_temperature")
 
 
 def plot_mean_goals_per_match_per_temperature(df_rain, df_no_rain, feature = 'temperature'):
@@ -319,38 +343,23 @@ def plot_mean_goals_per_match_per_temperature(df_rain, df_no_rain, feature = 'te
     return fig
 
 # plot 6
-st.markdown("---")
-st.markdown(f"<h2 style='text-align: center;'> <b> Distribution du nombre de buts moyen par match en fonction de la temperature </b> </h2>", unsafe_allow_html=True)
-st.pyplot(plot_mean_goals_per_match_per_temperature(df_rain, df_no_rain))
+if page == "Distribution du nombre de buts moyen par match en fonction de la temperature":
+    st.markdown(f"<h2 style='text-align: center;'> <b> Distribution du nombre de buts moyen par match en fonction de la temperature </b> </h2>", unsafe_allow_html=True)
+    st.pyplot(plot_mean_goals_per_match_per_temperature(df_rain, df_no_rain))
 
 
-temperature_bins = [-5., 5., 10., 15., 20., 30.]
-temperature_labels = [0., 7.5, 12.5, 17.5, 25.]
-no_rain2 = no_rain.copy()
-rain2 = rain.copy()
-no_rain2['cut_temperature'] = pd.cut(no_rain2['temperature'],
-                                     bins=temperature_bins,
-                                     labels=temperature_labels)
-rain2['cut_temperature'] = pd.cut(rain2['temperature'],
-                                  bins=temperature_bins,
-                                  labels=temperature_labels)
-rain2.tail()
+    # plot 7
+    st.markdown("---")
+    st.markdown(f"<h2 style='text-align: center;'> <b> Distribution du nombre de buts moyen par match en fonction de la temperature bins </b> </h2>", unsafe_allow_html=True)
+    st.pyplot(plot_mean_goals_per_match_per_temperature(df_rain2, df_no_rain2, 'cut_temperature'))
 
 
-df_no_rain2 = regroup_by_temperature(no_rain2, "cut_temperature")
-df_rain2 = regroup_by_temperature(rain2, "cut_temperature")
+if page == "Conclusion":
+    conclusion = st.button('Conclusion')
+    if conclusion:
 
-# plot 7
-st.markdown("---")
-st.markdown(f"<h2 style='text-align: center;'> <b> Distribution du nombre de buts moyen par match en fonction de la temperature bins </b> </h2>", unsafe_allow_html=True)
-st.pyplot(plot_mean_goals_per_match_per_temperature(df_rain2, df_no_rain2, 'cut_temperature'))
-
-st.markdown("---")
-conclusion = st.button('Conclusion')
-if conclusion:
-
-    st.markdown("""
-    <h2>Conclusion</h2>
-    <p>Avec tout le respect que l'on vous doit, cher Jean Michel, il semblerait qu'il n'y ait pas, voir très peu de corrélation entre le nombre de buts marqués par joueur ou par équipe et la météo en ligue 1.</p>
-    """, unsafe_allow_html=True)
-    st.balloons()
+        st.markdown("""
+        <h2>Conclusion</h2>
+        <p>Avec tout le respect que l'on vous doit, cher Jean Michel, il semblerait qu'il n'y ait pas, voir très peu de corrélation entre le nombre de buts marqués par joueur ou par équipe et la météo en ligue 1.</p>
+        """, unsafe_allow_html=True)
+        st.balloons()
